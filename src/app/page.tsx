@@ -3,39 +3,39 @@ import ContactForm from "@/components/ContactForm";
 
 const services = [
   {
-    num: "01 · Technology",
-    title: "Systems that scale with the science.",
+    num: "01 · AGCP Dashboard",
+    title: "Regulatory and operational intelligence in one place.",
     description:
-      "Architecture, data platforms, and decision tools built for regulated environments — designed by people who have shipped them.",
+      "The AGCP Dashboard gives small pharma companies enterprise-grade visibility into their pipeline, regulatory status, and operations — without the enterprise headcount.",
     items: [
-      "Data platform & clinical pipelines",
-      "AI/ML evaluation & integration",
-      "Compliance-ready cloud architecture",
-      "Technical due diligence",
+      "Regulatory intelligence and submission tracking",
+      "Pipeline and formulation management",
+      "Vendor and procurement oversight",
+      "Data room and document control",
     ],
   },
   {
-    num: "02 · Consulting",
-    title: "Strategy grounded in the work.",
+    num: "02 · PharmaSim",
+    title: "Train your team without the trial-and-error cost.",
     description:
-      "From commercial strategy to operating-model design, we work alongside leadership teams to translate ambition into executable plans.",
+      "PharmaSim is a pharmaceutical simulation platform that lets your team run through licensing negotiations, regulatory submissions, and commercialization decisions in a no-risk environment.",
     items: [
-      "Commercial & portfolio strategy",
-      "Operating-model design",
-      "Market entry & positioning",
-      "Board & investor advisory",
+      "Licensing and deal structure simulations",
+      "Regulatory pathway decision training",
+      "Commercialization and launch scenarios",
+      "Onboarding for new scientific and commercial staff",
     ],
   },
   {
-    num: "03 · Management",
-    title: "Hands-on leadership when it counts.",
+    num: "03 · Advisory",
+    title: "Strategic support when the decisions are hardest.",
     description:
-      "Interim and fractional leadership for critical moments — product launches, turnarounds, transitions, and the first 100 days.",
+      "Experienced counsel on licensing strategy, partnership structuring, regulatory planning, and commercial execution — from a team that has built and transacted in pharma.",
     items: [
-      "Interim & fractional executives",
-      "Program & transformation leadership",
-      "M&A integration",
-      "Founding-team acceleration",
+      "Licensing and out-licensing strategy",
+      "Partner identification and deal structuring",
+      "Regulatory and commercial pathway planning",
+      "Interim leadership and fractional CBDO support",
     ],
   },
 ];
@@ -43,39 +43,39 @@ const services = [
 const principles = [
   {
     num: "01",
-    title: "Graticule — we take measurements before we take positions.",
+    title: "Graticule — we measure before we advise.",
     body:
-      "A graticule is the crosshair inside a microscope. It is the quiet instrument by which something small becomes legible. We start every engagement the same way: by looking, carefully, at the specimen in front of us.",
+      "A graticule is the crosshair inside a microscope. It is the quiet instrument by which something small becomes legible. We begin every engagement the same way: by looking carefully at where you actually are, not where you want to be.",
   },
   {
     num: "02",
-    title: "Gratitude — we remember whose work we are building on.",
+    title: "Small pharma deserves enterprise-grade support.",
     body:
-      "Life sciences is a field of shoulders. Every molecule, protocol, and platform we touch exists because someone made it first. We name them, thank them, and work in their tradition.",
+      "The tools and counsel that move molecules to market have historically been available only to large organizations. We built Graticus to close that gap — because the best science is not always inside the largest companies.",
   },
   {
     num: "03",
     title: "Invictus — we hold the line when the work gets difficult.",
     body:
-      "Drug programs fail. Platforms slip. Funding tightens. Our value is highest at the exact moment most advisors become scarce. Unconquered is not a slogan; it is a service level.",
+      "Programs stall. Funding tightens. Partners go quiet. Our value is highest at the exact moment most advisors become scarce. We stay in the room and do the work until the outcome is resolved.",
   },
   {
     num: "04",
-    title: "One practice — three disciplines, one accountable team.",
+    title: "Tools and strategy are not separable.",
     body:
-      "Technology, consulting, and management are not separable in real companies, so they are not separable in our engagements. One team, one plan, one set of outcomes we own.",
+      "The AGCP Dashboard and PharmaSim are not products we license and leave. They are integrated into how we advise — so the intelligence your team builds inside them directly informs every strategic conversation we have together.",
   },
 ];
 
 const industries = [
-  "Biotech & Pharma",
-  "Medical Devices",
-  "Diagnostics & Tools",
-  "Digital Health",
-  "Clinical Research",
-  "Healthcare AI",
-  "Venture & Growth",
-  "Foundations & NFPs",
+  "Pre-clinical & Early Stage",
+  "Clinical-Stage Biotech",
+  "Specialty Pharma",
+  "Drug Delivery Platforms",
+  "Nutraceutical & OTC",
+  "505(b)(2) Programs",
+  "Licensing & Out-licensing",
+  "Emerging Market Pharma",
 ];
 
 function Wordmark({ copperClass = "c" }: { copperClass?: string }) {
@@ -108,14 +108,14 @@ export default function Home() {
 
       <header className="hero">
         <div className="wrap" style={{ position: "relative", zIndex: 2 }}>
-          <div className="eyebrow">Life sciences advisory</div>
+          <div className="eyebrow">Built for small pharma</div>
           <h1>
-            Measured decisions. <em>Unconquered</em> outcomes.
+            The infrastructure small pharma <em>actually needs.</em>
           </h1>
           <p className="lede">
-            Graticus is a boutique advisory serving the life-sciences industry. We bring
-            technology, consulting, and management together in one practice — so the teams
-            building what comes next can move with precision and resolve.
+            Graticus gives small and emerging pharma companies the tools, training, and
+            strategic support that were previously only available to large enterprises —
+            purpose-built for teams with real science and limited bandwidth.
           </p>
           <div className="hero-actions">
             <a href="#contact" className="btn-primary">
@@ -142,15 +142,15 @@ export default function Home() {
       <div className="wrap">
         <div className="meta-row">
           <span>
-            <span className="dot"></span> Technology
+            <span className="dot"></span> AGCP Dashboard
           </span>
           <span>
-            <span className="dot"></span> Consulting
+            <span className="dot"></span> PharmaSim
           </span>
           <span>
-            <span className="dot"></span> Management
+            <span className="dot"></span> Advisory
           </span>
-          <span>Est. 2026 · Life Sciences</span>
+          <span>Est. 2026 · Small Pharma</span>
         </div>
       </div>
 
@@ -159,8 +159,8 @@ export default function Home() {
           <div className="sec-header">
             <div className="label">01 / Services</div>
             <h2>
-              A single practice for the three things <em>life-sciences teams</em> most often
-              need at once.
+              Three offerings. One firm. Built around what small pharma teams{" "}
+              <em>actually face.</em>
             </h2>
           </div>
           <div className="services">
@@ -185,7 +185,7 @@ export default function Home() {
           <div className="sec-header">
             <div className="label">02 / Approach</div>
             <h2>
-              The name we chose is the <em>work we do.</em>
+              The name we chose is the <em>standard we hold.</em>
             </h2>
           </div>
           <div className="principles">
@@ -207,7 +207,8 @@ export default function Home() {
           <div className="sec-header">
             <div className="label">03 / Industries</div>
             <h2>
-              We work with operators and investors across <em>life sciences.</em>
+              We work with small and emerging pharma companies at every{" "}
+              <em>stage of growth.</em>
             </h2>
           </div>
           <div className="list">
@@ -224,8 +225,8 @@ export default function Home() {
       <section className="positioning">
         <div className="wrap">
           <blockquote>
-            Precision is a <em>kind of gratitude.</em> It is the only way to honor a field
-            that took a century to get here.
+            Precision is a <em>kind of respect.</em> It is the only way to honor the
+            science — and the patients waiting at the end of it.
           </blockquote>
           <div className="cite">
             <span className="rule"></span>
@@ -242,8 +243,8 @@ export default function Home() {
                 Start a <em>conversation.</em>
               </h2>
               <p className="lede">
-                Tell us about the decision you are facing. We read every note, and respond
-                within two business days — usually faster.
+                Tell us about your pipeline, your team, and the decision in front of you.
+                We respond within two business days — usually faster.
               </p>
               <div className="meta-row" style={{ borderBottom: 0, paddingTop: 32 }}>
                 <span>
@@ -265,15 +266,15 @@ export default function Home() {
                 <Wordmark />
               </div>
               <p>
-                A boutique advisory bringing technology, consulting, and management together
-                for life-sciences teams.
+                Purpose-built tools and advisory for small and emerging pharma companies —
+                the AGCP Dashboard, PharmaSim, and experienced strategic counsel.
               </p>
             </div>
             <div className="col">
-              <h5>Services</h5>
-              <a href="#services">Technology</a>
-              <a href="#services">Consulting</a>
-              <a href="#services">Management</a>
+              <h5>Offerings</h5>
+              <a href="#services">AGCP Dashboard</a>
+              <a href="#services">PharmaSim</a>
+              <a href="#services">Advisory</a>
             </div>
             <div className="col">
               <h5>Firm</h5>

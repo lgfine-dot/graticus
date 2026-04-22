@@ -4,12 +4,12 @@ import { GraticuleSymbol } from "@/components/Graticule";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://graticus.com"),
-  title: "Graticus — Life Sciences Advisory",
+  title: "Graticus — Built for Small Pharma",
   description:
-    "Graticus is a boutique advisory bringing technology, consulting, and management together for life-sciences teams.",
+    "Purpose-built tools and advisory for small and emerging pharma companies — the AGCP Dashboard, PharmaSim, and experienced strategic counsel.",
   openGraph: {
-    title: "Graticus — Life Sciences Advisory",
-    description: "Measured decisions. Unconquered outcomes.",
+    title: "Graticus — Built for Small Pharma",
+    description: "The infrastructure small pharma actually needs.",
     url: "https://graticus.com",
     siteName: "Graticus",
     images: ["/og-image.png"],
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Graticus — Life Sciences Advisory",
-    description: "Measured decisions. Unconquered outcomes.",
+    title: "Graticus — Built for Small Pharma",
+    description: "The infrastructure small pharma actually needs.",
     images: ["/og-image.png"],
   },
   icons: {
