@@ -1,42 +1,59 @@
 import Graticule from "@/components/Graticule";
 import ContactForm from "@/components/ContactForm";
 
+/*
+ * Three offerings, each orderable on its own.
+ *
+ * "PharmaSim" is gone. It was retired on 1 September because the name is
+ * already an Interpretive Simulations marketing simulation taught in MBA
+ * courses — a business-school buyer may well have used the other one. Graticus
+ * is the single parent brand, and the products underneath it are named by what
+ * they do rather than by sub-brands that have to be defended.
+ *
+ * The Protocol Generator is named here for the first time. It was previously
+ * one bullet inside the dashboard ("Pipeline and formulation management"),
+ * which made the thing most likely to be bought on its own invisible.
+ */
 const services = [
   {
-    num: "01 · AGCP Dashboard",
-    title: "Regulatory and operational intelligence in one place.",
+    num: "01 · Protocol Generator",
+    title: "A development brief, from a structure to a document.",
     description:
-      "The AGCP Dashboard gives small pharma companies enterprise-grade visibility into their pipeline, regulatory status, and operations — without the enterprise headcount.",
+      "Identify a compound by name, by uploading a structure, or by drawing it. The Protocol Generator gathers the evidence — chemistry, literature, trials, patents — builds a cited register, and writes a development brief you can put in front of a partner.",
     items: [
-      "Regulatory intelligence and submission tracking",
-      "Pipeline and formulation management",
-      "Vendor and procurement oversight",
-      "Data room and document control",
+      "Development briefs with a full citation register",
+      "Synthesis, SOP, stability and safety protocols",
+      "Add project plans, valuation, or finance tracking",
+      "Or take the whole dashboard — regulatory, IP, vendors, data room",
     ],
+    action: { label: "Request access", href: "mailto:hello@graticus.com?subject=Protocol%20Generator%20access" },
   },
   {
-    num: "02 · PharmaSim",
-    title: "Train your team without the trial-and-error cost.",
+    num: "02 · Training",
+    title: "Make the expensive decisions first in a simulation.",
     description:
-      "PharmaSim is a pharmaceutical simulation platform that lets your team run through licensing negotiations, regulatory submissions, and commercialization decisions in a no-risk environment.",
+      "Thirteen decision simulations that put your team in the chair — a runway, a molecule, and a call to make. Teaching comes before the decision and the reasoning comes after it, so people learn why the strong answer was strong.",
     items: [
-      "Licensing and deal structure simulations",
-      "Regulatory pathway decision training",
-      "Commercialization and launch scenarios",
-      "Onboarding for new scientific and commercial staff",
+      "Founder track — regulatory, licensing, capital, exit",
+      "Technology transfer track — written from the TTO side of the table",
+      "Or the full catalogue, thirteen simulations",
+      "Priced by the seat, and tailorable to your own programme",
     ],
+    action: { label: "Sign in", href: "https://app.graticus.com" },
   },
   {
     num: "03 · Advisory",
     title: "Strategic support when the decisions are hardest.",
     description:
-      "Experienced counsel on licensing strategy, partnership structuring, regulatory planning, and commercial execution — from a team that has built and transacted in pharma.",
+      "A small number of engagements at a time, on licensing strategy, partnership structuring, regulatory planning and commercial execution — from a team that has built and transacted in pharma.",
     items: [
       "Licensing and out-licensing strategy",
       "Partner identification and deal structuring",
       "Regulatory and commercial pathway planning",
       "Interim leadership and fractional CBDO support",
     ],
+    action: { label: "Enquire", href: "mailto:hello@graticus.com?subject=Advisory%20enquiry" },
+    note: "Deliberately limited. We take on few engagements so the ones we take on get the room.",
   },
 ];
 
@@ -63,7 +80,7 @@ const principles = [
     num: "04",
     title: "Tools and strategy are not separable.",
     body:
-      "The AGCP Dashboard and PharmaSim are not products we license and leave. They are integrated into how we advise — so the intelligence your team builds inside them directly informs every strategic conversation we have together.",
+      "The tools are not products we license and leave. They are integrated into how we advise — so the intelligence your team builds inside them directly informs every strategic conversation we have together. Equally, each stands on its own: most customers take one and never need the rest.",
   },
 ];
 
@@ -142,10 +159,10 @@ export default function Home() {
       <div className="wrap">
         <div className="meta-row">
           <span>
-            <span className="dot"></span> AGCP Dashboard
+            <span className="dot"></span> Protocol Generator
           </span>
           <span>
-            <span className="dot"></span> PharmaSim
+            <span className="dot"></span> Training
           </span>
           <span>
             <span className="dot"></span> Advisory
@@ -174,6 +191,12 @@ export default function Home() {
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
+                {s.note && <p className="service-note">{s.note}</p>}
+                {s.action && (
+                  <a className="service-action" href={s.action.href}>
+                    {s.action.label} <span aria-hidden="true">&rarr;</span>
+                  </a>
+                )}
               </div>
             ))}
           </div>
@@ -267,13 +290,13 @@ export default function Home() {
               </div>
               <p>
                 Purpose-built tools and advisory for small and emerging pharma companies —
-                the AGCP Dashboard, PharmaSim, and experienced strategic counsel.
+                the Protocol Generator, decision training, and experienced strategic counsel.
               </p>
             </div>
             <div className="col">
               <h5>Offerings</h5>
-              <a href="#services">AGCP Dashboard</a>
-              <a href="#services">PharmaSim</a>
+              <a href="#services">Protocol Generator</a>
+              <a href="#services">Training</a>
               <a href="#services">Advisory</a>
             </div>
             <div className="col">

@@ -57,10 +57,11 @@ export default function ContactForm() {
       </div>
       <div className="field">
         <label htmlFor="area">Area of interest</label>
-        <select id="area" name="area" defaultValue="AGCP Dashboard">
-          <option>AGCP Dashboard</option>
-          <option>PharmaSim</option>
-          <option>Advisory services</option>
+        <select id="area" name="area" defaultValue="Protocol Generator">
+          <option>Protocol Generator</option>
+          <option>Training</option>
+          <option>The full dashboard</option>
+          <option>Advisory</option>
           <option>A combination of the above</option>
           <option>Not sure yet</option>
         </select>

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://graticus.com"),
   title: "Graticus — Built for Small Pharma",
   description:
-    "Purpose-built tools and advisory for small and emerging pharma companies — the AGCP Dashboard, PharmaSim, and experienced strategic counsel.",
+    "Purpose-built tools and advisory for small and emerging pharma companies — the Protocol Generator, decision training, and experienced strategic counsel.",
   openGraph: {
     title: "Graticus — Built for Small Pharma",
     description: "The infrastructure small pharma actually needs.",
