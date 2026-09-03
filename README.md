@@ -50,31 +50,23 @@ does not serve functions, and the form will correctly report a failure.
 | Variable | Notes |
 |---|---|
 | `RESEND_API_KEY` | Create at resend.com/api-keys with **Sending access** only. |
-| `CONTACT_TO` | Optional. Where enquiries land. Defaults to `lawrence@agcp.pt`. |
-| `CONTACT_FROM` | Optional. Must be on a domain verified at resend.com/domains — see below. |
+| `CONTACT_TO` | Optional. Where enquiries land. Defaults to `hello@graticus.com`. |
+| `CONTACT_FROM` | Optional. Defaults to `Graticus <hello@graticus.com>`. Must be on a verified domain. |
 
 ### Where enquiries land
 
-Enquiries go to `lawrence@agcp.pt` by default — a mailbox known to be read. The
-site displays `hello@graticus.com`, but a send to a mailbox that does not exist
-is reported as a success by Resend and the enquiry vanishes silently. Set
-`CONTACT_TO` to `hello@graticus.com` once that address is confirmed to receive
-mail. A recipient domain needs no verification in Resend; only the sender does.
+Enquiries go to `hello@graticus.com`, which sends via Resend and receives via
+Proton (confirmed working 2026-09-03). Both defaults are in the function, so
+neither `CONTACT_TO` nor `CONTACT_FROM` needs setting — they exist to override,
+e.g. to reroute enquiries temporarily.
 
-### The From address
+Worth knowing: Resend reports a send to a non-existent mailbox as a **success**,
+so a broken recipient loses enquiries silently. If the MX records for
+graticus.com ever change, re-test that the mailbox still receives.
 
-Resend will only send from a **verified domain**. The account has
-`agcptech.com` verified; `graticus.com` is not added at all. So the function
-defaults to `Graticus Site <graticus@agcptech.com>` — no DNS work, and the form
-works the moment `RESEND_API_KEY` is set. `CONTACT_FROM` can be left unset.
-
-Nobody outside sees that address. It is the From line on a notification to
-yourself, and every message sets reply-to to the enquirer, so replying goes to
-them and not to agcptech.com.
-
-**Before launch:** add `graticus.com` at resend.com/domains, publish the DKIM
-and SPF records it gives you, then set `CONTACT_FROM` to
-`Graticus <hello@graticus.com>` in the Netlify environment. No code change.
+The From address must be on a domain verified at resend.com/domains.
+`graticus.com` is verified; `agcptech.com` also is, and was used as a stopgap
+sender before graticus.com was added.
 
 ### Failure behaviour
 

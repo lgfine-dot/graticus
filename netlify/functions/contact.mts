@@ -14,9 +14,10 @@
  *   CONTACT_TO       where enquiries land. Optional — defaults to DELIVER_TO
  *                    below. A recipient domain needs no verification in
  *                    Resend; only the sender does.
- *   CONTACT_FROM     the From address. Must be on a domain verified in Resend.
- *                    Optional — see INTERIM_FROM below for why it can be left
- *                    unset for now.
+ *                    Set it to route enquiries somewhere else temporarily,
+ *                    e.g. while the Graticus mailbox is being reorganised.
+ *   CONTACT_FROM     the From address. Optional — defaults to DEFAULT_FROM
+ *                    below. Must be on a domain verified in Resend.
  *
  * Every reply-to is the enquirer, so answering is a plain reply.
  */
@@ -24,27 +25,24 @@
 const RESEND_ENDPOINT = "https://api.resend.com/emails";
 
 /*
- * Resend refuses to send from an unverified domain, and graticus.com is not
- * added to the account yet — only agcptech.com is verified. So the default
- * sender is an agcptech.com address, which needs no DNS work and lets the form
- * work the moment RESEND_API_KEY is set.
+ * graticus.com was verified in Resend on 2026-09-03, so mail can be sent from
+ * the brand's own address. Before that the default was an agcptech.com sender
+ * as a stopgap; that is no longer needed and would now look like mail from a
+ * different company.
  *
- * Nobody outside sees this. It is the From line on an internal notification,
- * every message carries reply_to: the enquirer, and CONTACT_TO is unaffected.
- *
- * When graticus.com verifies at resend.com/domains, set CONTACT_FROM to
- * "Graticus <hello@graticus.com>" in the Netlify environment. No code change.
+ * Sending requires a domain verified at resend.com/domains. If this address
+ * ever stops working, check the domain's status there first.
  */
-const INTERIM_FROM = "Graticus Site <graticus@agcptech.com>";
+const DEFAULT_FROM = "Graticus <hello@graticus.com>";
 
 /*
- * Where enquiries actually land. Deliberately a mailbox that is known to be
- * read, rather than hello@graticus.com — the site displays that address, but
- * a send to a mailbox that does not exist yet would be reported as a success
- * by Resend and the enquiry would simply vanish. Point this at the real
- * hello@graticus.com once it is confirmed to receive mail.
+ * Where enquiries land. This is the address the site displays, which is how it
+ * should be — but note that Resend reports a send to a non-existent mailbox as
+ * a success, so a broken mailbox loses enquiries silently. hello@graticus.com
+ * was confirmed to send and receive through Proton on 2026-09-03; re-test it
+ * if the MX records for graticus.com ever change.
  */
-const DELIVER_TO = "lawrence@agcp.pt";
+const DELIVER_TO = "hello@graticus.com";
 
 /* Generous enough for a real enquiry, tight enough that the function is not a
    relay for someone pasting a novel into the textarea. */
@@ -165,7 +163,7 @@ ${rows
         "content-type": "application/json",
       },
       body: JSON.stringify({
-        from: process.env.CONTACT_FROM || INTERIM_FROM,
+        from: process.env.CONTACT_FROM || DEFAULT_FROM,
         to: [process.env.CONTACT_TO || DELIVER_TO],
         reply_to: email,
         subject: `${area} — ${name}${org ? ` (${org})` : ""}`,
