@@ -3,7 +3,14 @@
   publish = "out"
 
 [build.environment]
-  NODE_VERSION = "18"
+  # Netlify Functions v2 syntax (default export, Request/Response) needs Node 18+.
+  NODE_VERSION = "20"
+
+# The contact form posts to netlify/functions/contact.mts, which holds the
+# Resend API key server-side so the static export can stay a static export.
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
 
 [[headers]]
   for = "/*"

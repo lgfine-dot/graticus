@@ -1,7 +1,11 @@
 node_modules/
 .next/
 out/
-.env*.local
+.env
+.env*
+!.env.example
+.netlify/
 .DS_Store
 *.log
 next-env.d.ts
+tsconfig.tsbuildinfo
