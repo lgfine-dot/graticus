@@ -265,6 +265,20 @@ section { padding: 100px 0; border-bottom: 1px solid var(--line); }
   margin: 3px 0 0; font-size: 13px; color: var(--ink-soft); line-height: 1.5;
 }
 
+/* A price is a door, but a quiet one: it inherits the dt's weight and colour so
+   the pricing block still reads as a table rather than a row of buttons, and
+   only declares itself on hover and focus. */
+.detail-group.pricing dt a.price-link {
+  color: inherit; text-decoration: none; border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.detail-group.pricing dt a.price-link:hover {
+  color: var(--copper-600); border-bottom-color: currentColor;
+}
+.detail-group.pricing dt a.price-link:focus-visible {
+  outline: 2px solid var(--copper-600); outline-offset: 3px; border-radius: 2px;
+}
+
 /* Context stated plainly — the comparison a buyer makes anyway, and the
    scarcity of advisory capacity, both belong on the page rather than in the
    first call. */

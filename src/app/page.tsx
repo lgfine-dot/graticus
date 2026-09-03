@@ -315,8 +315,24 @@ export default function Home() {
                       <dl>
                         {priceLines(o.prices).map((p) => (
                           <div key={p.id}>
+                            {/* Each price is its own door. A reader who has just
+                                read a figure is the one ready to enquire, and
+                                the enquiry then says WHICH tier — which the
+                                generic "Request access" never could, leaving
+                                every lead ambiguous between a one-off brief and
+                                a subscription. No extra form field: the tier
+                                rides in on the pre-filled message. */}
                             <dt>
-                              {p.label} — {p.price}
+                              <InterestLink
+                                className="price-link"
+                                arrow={false}
+                                interest={{
+                                  area: o.actions[0].area,
+                                  message: `Interested in ${p.label} (${p.price}).`,
+                                }}
+                              >
+                                {p.label} — {p.price}
+                              </InterestLink>
                             </dt>
                             {p.body && <dd>{p.body}</dd>}
                           </div>

@@ -21,10 +21,17 @@ export default function InterestLink({
   interest,
   className,
   children,
+  /**
+   * The arrow suits a standalone call to action. On a price line the link IS the
+   * price, and an arrow after every figure reads as clutter rather than as an
+   * invitation, so it can be turned off.
+   */
+  arrow = true,
 }: {
   interest: Interest;
   className?: string;
   children: React.ReactNode;
+  arrow?: boolean;
 }) {
   return (
     <a
@@ -37,9 +44,11 @@ export default function InterestLink({
       }}
     >
       {children}
-      <span className="arrow" aria-hidden="true">
-        →
-      </span>
+      {arrow && (
+        <span className="arrow" aria-hidden="true">
+          →
+        </span>
+      )}
     </a>
   );
 }
