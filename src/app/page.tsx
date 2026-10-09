@@ -163,6 +163,9 @@ const offerings: Offering[] = [
     ],
     prices: ["A1", "A2", "A3", "A4"],
     actions: [{ label: "Enquire", area: "Advisory" }],
+    /* Evidence of how we think, kept on its own domain so the writing stays
+       editorial rather than reading as marketing for this page. */
+    secondary: { label: "Read our board governance writing", href: "https://biopharmagovernance.com" },
   },
 ];
 
@@ -495,6 +498,7 @@ export default function Home() {
               <h5>Firm</h5>
               <a href="#approach">Approach</a>
               <a href="#industries">Industries</a>
+              <a href="https://biopharmagovernance.com">Board governance writing</a>
               <a href="#contact">Contact</a>
             </div>
             <div className="col">
