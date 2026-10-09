@@ -105,6 +105,7 @@ const offerings: Offering[] = [
         message: "Please send the sample development brief.",
       },
     ],
+    secondary: { label: "Sign in", href: "https://platform.graticus.com" },
   },
   {
     num: "02 · Training",
@@ -236,6 +237,16 @@ export default function Home() {
             <a href="#services">Services</a>
             <a href="#approach">Approach</a>
             <a href="#industries">Industries</a>
+            {/* Two products, two sign-in addresses. A details element keeps the
+                static export free of client JavaScript, and unlike the anchor
+                links it stays visible on phones, where signing in matters most. */}
+            <details className="nav-signin">
+              <summary>Sign in</summary>
+              <div className="nav-signin-menu">
+                <a href="https://platform.graticus.com">Graticus Platform</a>
+                <a href="https://app.graticus.com">Training</a>
+              </div>
+            </details>
             <a href="#contact" className="nav-cta">
               Start a conversation
             </a>
@@ -500,6 +511,11 @@ export default function Home() {
               <a href="#industries">Industries</a>
               <a href="https://biopharmagovernance.com">Board governance writing</a>
               <a href="#contact">Contact</a>
+            </div>
+            <div className="col">
+              <h5>Sign in</h5>
+              <a href="https://platform.graticus.com">Graticus Platform</a>
+              <a href="https://app.graticus.com">Training</a>
             </div>
             <div className="col">
               <h5>Connect</h5>
