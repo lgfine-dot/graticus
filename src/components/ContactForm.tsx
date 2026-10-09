@@ -6,9 +6,8 @@ import { INTEREST_EVENT, type Interest } from "./InterestLink";
 type Status = "idle" | "submitting" | "success" | "error";
 
 const AREAS = [
-  "Protocol Generator",
+  "Graticus Platform",
   "Training",
-  "The full dashboard",
   "Advisory",
   "A combination of the above",
   "Not sure yet",
