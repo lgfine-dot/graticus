@@ -4,7 +4,7 @@
  * The page markup never contains a number. It references these by id, so
  * changing a price is one line here rather than a search for every place the
  * figure appears — and the ids match the pricing table in the copy deck (P1–P3
- * Protocol Generator, T1–T6 Training, A1–A4 Advisory) so the two can be checked
+ * Graticus Platform, T1–T6 Training, A1–A4 Advisory) so the two can be checked
  * against each other without translation.
  *
  * These are working numbers, not final ones. They have not yet been tested
@@ -33,24 +33,24 @@ export type PriceLine = {
 };
 
 export const prices = {
-  // ---- Protocol Generator -------------------------------------------------
+  // ---- Graticus Platform -------------------------------------------------
   P1: {
     id: "P1",
-    label: "Single brief",
+    label: "Single development brief",
     price: "$3,500",
-    body: "One compound, the complete document and register. Credited in full against a subscription if you continue.",
+    body: "One compound, the complete document and register. Credited in full against either subscription if you continue.",
   },
   P2: {
     id: "P2",
-    label: "Program access",
+    label: "Protocol Generator access",
     price: "from $1,750/month",
     body: "Billed annually. Dedicated instance, up to 24 briefs a year, project-plan conversion included.",
   },
   P3: {
     id: "P3",
-    label: "Full dashboard",
+    label: "Full platform",
     price: "from $3,500/month",
-    body: "Adds regulatory tracking, IP, vendor management and data room.",
+    body: "Every module: the Protocol Generator plus strategy and valuation, program management, finance, regulatory, IP and the licensing data room.",
   },
 
   // ---- Training -----------------------------------------------------------

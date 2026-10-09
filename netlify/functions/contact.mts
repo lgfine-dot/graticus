@@ -57,9 +57,8 @@ const LIMITS = {
 type Field = keyof typeof LIMITS;
 
 const AREAS = [
-  "Protocol Generator",
+  "Graticus Platform",
   "Training",
-  "The full dashboard",
   "Advisory",
   "A combination of the above",
   "Not sure yet",

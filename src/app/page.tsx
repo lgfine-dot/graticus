@@ -6,6 +6,12 @@ import { priceLines, type PriceId } from "@/content/pricing";
 /*
  * Three offerings, each orderable on its own.
  *
+ * The first offering is the whole platform, not only the Protocol Generator.
+ * Selling the brief alone undersold what a customer actually gets: the same
+ * deployment runs the program, the regulatory record, IP, finance and the data
+ * room. The Protocol Generator stays named inside it because it is the part a
+ * buyer can picture, and the single brief stays as the cheapest way in.
+ *
  * "PharmaSim" is gone. It was retired on 1 September because the name is
  * already an Interpretive Simulations marketing simulation taught in MBA
  * courses — a business-school buyer may well have used the other one. Graticus
@@ -36,38 +42,68 @@ type Offering = {
 
 const offerings: Offering[] = [
   {
-    num: "01 · Protocol Generator",
-    title: "From a structure to a development brief in under three minutes.",
+    num: "01 · Graticus Platform",
+    title: "One system for a development program, from the first idea to the data room.",
     paras: [
-      "Give it a compound name, upload a structure image, or draw it. Nothing generates until you confirm the structure is the one you meant. Then the Protocol Generator pulls the evidence — PubChem, ChEMBL, Europe PMC, ClinicalTrials.gov, EPO patent records — builds a citation register, and writes a nine-section development brief you can put in front of a partner.",
+      "Most small pharma teams run a program across spreadsheets, shared drives, a project tool and three consultants. The Graticus Platform puts the science, the strategy, the regulatory path, the money and the deal in one place, with role-based access and a full audit trail on every change.",
+      "Its best-known part is the Protocol Generator. Give it a compound name, an image of the structure, or draw it; nothing generates until you confirm the structure is the one you meant. It then pulls the evidence from PubChem, ChEMBL, Europe PMC, ClinicalTrials.gov and EPO patent records, and writes a nine-section development brief, with every claim cited, that you can put in front of a partner.",
     ],
     groups: [
       {
-        label: "What you get",
+        label: "Science and evidence",
         items: [
-          "A versioned Word document with a full citation register attached",
-          "Executive summary, compound profile, target product profile, comparable compounds, development considerations, IP and risk landscape, open questions",
-          "Every claim traced to a registered source. A section citing something ungrounded is regenerated once, then failed rather than shipped.",
-          "A development plan that is not written by a model — it comes from a regulatory rules engine and a critical-path scheduler, so nothing in the schedule can be invented",
-          "The plan converts into a real project: a typical small-molecule program to IND/CTA-ready lands at roughly 30 milestones and 230 tasks across 252 days, with the critical path marked",
+          "Protocol Generator: a cited development brief in under three minutes, delivered as a versioned Word document with its citation register. A section that cites something ungrounded is regenerated once, then failed rather than shipped.",
+          "A development plan that is not written by a model. It comes from a regulatory rules engine and a critical-path scheduler, and converts into a real project: a typical small-molecule program to IND/CTA-ready lands at roughly 30 milestones and 230 tasks across 252 days.",
+          "Literature assistant, data interpreter and hypothesis generator, alongside your compound profiles and formulation records",
         ],
       },
       {
-        label: "On your molecule",
+        label: "Strategy and valuation",
         items: [
-          "It never touches our pharma business. It does go to public chemistry, literature and patent databases, and to the model that writes the prose. Every customer runs on their own deployment, and we put the data handling in writing before you upload anything.",
-          "A support tool, not the last word. The brief gets a competent team to the starting line faster with every claim traceable and every gap named. Your scientist, your regulatory lead and your patent attorney still decide.",
+          "Idea Explorer: start from an idea, get three to five options, each checked against public registers",
+          "Compound screening and evaluation, regulatory gap analysis and prior-art research",
+          "Opportunity, licensing and launch analysis, and a valuation of each program you can save and compare",
+        ],
+      },
+      {
+        label: "Running the program",
+        items: [
+          "Each program as a venture with milestones, tasks, approvals and time tracking",
+          "Budgets, expenses, invoices and reconciliation, with vendor management",
+          "Grant applications drafted from the program record",
+        ],
+      },
+      {
+        label: "Regulatory, IP and deals",
+        items: [
+          "Regulatory compliance, reports and a log of every agency interaction, for FDA 505(b)(2), ANDA and EMA pathways",
+          "IP and patent portfolio, and patent work from invention disclosure through PCT",
+          "Contracts, contacts and meetings, and a licensing data room with NDAs, analytics and a partner portal",
+        ],
+      },
+      {
+        label: "On your data",
+        items: [
+          "It never touches our pharma business. The Protocol Generator does go to public chemistry, literature and patent databases, and to the model that writes the prose. Every customer runs on their own deployment, and we put the data handling in writing before you upload anything.",
+          "A support tool, not the last word. Your scientist, your regulatory lead and your patent attorney still decide.",
         ],
       },
     ],
-    prices: ["P1", "P2", "P3"],
+    /* Full platform first; the Protocol Generator subscription and the single
+       brief stay as the cheaper ways in, and the brief is credited if you
+       continue. */
+    prices: ["P3", "P2", "P1"],
     actions: [
       {
+        label: "Book a walkthrough",
+        area: "Graticus Platform",
+        message: "Please arrange a walkthrough of the Graticus Platform.",
+      },
+      {
         label: "See a sample brief",
-        area: "Protocol Generator",
+        area: "Graticus Platform",
         message: "Please send the sample development brief.",
       },
-      { label: "Request access", area: "Protocol Generator" },
     ],
   },
   {
@@ -212,8 +248,9 @@ export default function Home() {
           </h1>
           <p className="lede">
             Graticus gives small and emerging pharma teams three things large companies
-            take for granted: a tool that turns a molecule into a fully cited development
-            brief in under three minutes, thirteen four-hour simulations that let your team
+            take for granted: one platform that runs a development program end to end,
+            from a fully cited development brief in under three minutes to the data
+            room, thirteen four-hour simulations that let your team
             make the expensive decisions before they cost anything, and senior counsel when
             the call is hard.
           </p>
@@ -221,7 +258,7 @@ export default function Home() {
             <InterestLink
               className="btn-primary"
               interest={{
-                area: "Protocol Generator",
+                area: "Graticus Platform",
                 message: "Please send the sample development brief.",
               }}
             >
@@ -247,7 +284,7 @@ export default function Home() {
       <div className="wrap">
         <div className="meta-row">
           <span>
-            <span className="dot"></span> Protocol Generator
+            <span className="dot"></span> Graticus Platform
           </span>
           <span>
             <span className="dot"></span> Training
@@ -450,7 +487,7 @@ export default function Home() {
             </div>
             <div className="col">
               <h5>Offerings</h5>
-              <a href="#services">Protocol Generator</a>
+              <a href="#services">Graticus Platform</a>
               <a href="#services">Training</a>
               <a href="#services">Advisory</a>
             </div>
