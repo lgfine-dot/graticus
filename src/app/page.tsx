@@ -1,7 +1,6 @@
 import Graticule from "@/components/Graticule";
 import ContactForm from "@/components/ContactForm";
 import InterestLink from "@/components/InterestLink";
-import { priceLines, type PriceId } from "@/content/pricing";
 
 /*
  * Three offerings, each orderable on its own.
@@ -18,24 +17,16 @@ import { priceLines, type PriceId } from "@/content/pricing";
  * is the single parent brand, and the products underneath it are named by what
  * they do rather than by sub-brands that have to be defended.
  *
- * Each offering now carries its own price. A small-pharma reader's first
- * question is whether a company of eleven can afford this at all, and a page
- * that answers it only after an email exchange loses the readers who assumed
- * the answer was no.
- *
- * No figure is typed into this file. Offerings name price ids and the numbers
- * come from src/content/pricing.ts, which also explains why the academic rate
- * is defined there but never rendered here.
+ * No prices are published (13 Oct 2026): each offering's Pricing block asks
+ * the reader to contact us, and the enquiry arrives naming the offering. The
+ * working figures stay in src/content/pricing.ts, unrendered, for when prices
+ * are published again.
  */
 type Offering = {
   num: string;
   title: string;
   paras: string[];
   groups: { label: string; items: string[] }[];
-  /* Ids only. The figures live in src/content/pricing.ts so a price change is
-     one edit there rather than a hunt through the markup. */
-  prices?: readonly PriceId[];
-  priceNote?: string;
   actions: { label: string; area: string; message?: string }[];
   secondary?: { label: string; href: string };
 };
@@ -89,10 +80,6 @@ const offerings: Offering[] = [
         ],
       },
     ],
-    /* Full platform first; the Protocol Generator subscription and the single
-       brief stay as the cheaper ways in, and the brief is credited if you
-       continue. */
-    prices: ["P3", "P2", "P1"],
     actions: [
       {
         label: "Book a walkthrough",
@@ -132,9 +119,6 @@ const offerings: Offering[] = [
         ],
       },
     ],
-    prices: ["T1", "T2", "T3", "T4", "T5"],
-    priceNote:
-      "For context: a three-day industry conference costs about the same per person and produces twenty hours of sitting in rooms.",
     actions: [{ label: "Try a simulation", area: "Training" }],
     secondary: { label: "Sign in", href: "https://app.graticus.com" },
   },
@@ -162,7 +146,6 @@ const offerings: Offering[] = [
         ],
       },
     ],
-    prices: ["A1", "A2", "A3", "A4"],
     actions: [{ label: "Enquire", area: "Advisory" }],
     /* Evidence of how we think, kept on its own domain so the writing stays
        editorial rather than reading as marketing for this page. */
@@ -360,38 +343,23 @@ export default function Home() {
                       </ul>
                     </div>
                   ))}
-                  {o.prices && (
-                    <div className="detail-group pricing">
-                      <h4>Pricing</h4>
-                      <dl>
-                        {priceLines(o.prices).map((p) => (
-                          <div key={p.id}>
-                            {/* Each price is its own door. A reader who has just
-                                read a figure is the one ready to enquire, and
-                                the enquiry then says WHICH tier — which the
-                                generic "Request access" never could, leaving
-                                every lead ambiguous between a one-off brief and
-                                a subscription. No extra form field: the tier
-                                rides in on the pre-filled message. */}
-                            <dt>
-                              <InterestLink
-                                className="price-link"
-                                arrow={false}
-                                interest={{
-                                  area: o.actions[0].area,
-                                  message: `Interested in ${p.label} (${p.price}).`,
-                                }}
-                              >
-                                {p.label} — {p.price}
-                              </InterestLink>
-                            </dt>
-                            {p.body && <dd>{p.body}</dd>}
-                          </div>
-                        ))}
-                      </dl>
-                      {o.priceNote && <p className="service-note">{o.priceNote}</p>}
-                    </div>
-                  )}
+                  <div className="detail-group pricing">
+                    <h4>Pricing</h4>
+                    {/* The enquiry names the offering, so a pricing request
+                        arrives knowing what it is about. */}
+                    <p>
+                      <InterestLink
+                        className="price-link"
+                        arrow={false}
+                        interest={{
+                          area: o.actions[0].area,
+                          message: `Please send pricing information for ${o.num.replace(/^\d+ · /, "")}.`,
+                        }}
+                      >
+                        Contact us for more information
+                      </InterestLink>
+                    </p>
+                  </div>
                 </div>
               </article>
             ))}
