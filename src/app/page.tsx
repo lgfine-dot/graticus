@@ -38,13 +38,18 @@ const offerings: Offering[] = [
     paras: [
       "Most small pharma teams run a program across spreadsheets, shared drives, a project tool and three consultants. The Graticus Platform puts the science, the strategy, the regulatory path, the money and the deal in one place, with role-based access and a full audit trail on every change.",
       "Its best-known part is the Protocol Generator. Give it a compound name, an image of the structure, or draw it; nothing generates until you confirm the structure is the one you meant. It then pulls the evidence from PubChem, ChEMBL, Europe PMC, ClinicalTrials.gov and EPO patent records, and writes a nine-section development brief, with every claim cited, that you can put in front of a partner.",
+      "There are four ways to start: from a compound, from screening candidates, from a formulation, or from an idea in Idea Explorer. Each leads straight into a brief and a development plan.",
     ],
     groups: [
       {
         label: "Science and evidence",
         items: [
-          "Protocol Generator: a cited development brief in under three minutes, delivered as a versioned Word document with its citation register. A section that cites something ungrounded is regenerated once, then failed rather than shipped.",
+          "Protocol Generator: a cited development brief on a single compound in under three minutes, delivered as a versioned Word document with its citation register. A section that cites something ungrounded is regenerated once, then failed rather than shipped.",
           "A development plan that is not written by a model. It comes from a regulatory rules engine and a critical-path scheduler, and converts into a real project: a typical small-molecule program to IND/CTA-ready lands at roughly 30 milestones and 230 tasks across 252 days.",
+          "Formulation briefs for products with more than one ingredient. Enter each ingredient with its role (active, co-active, penetration enhancer, excipient or vehicle), its form, including nano and salt forms, and its concentration. The brief researches each active and the combination across literature, trials and patents, and takes about four to six minutes.",
+          "For a formulation, the brief sets out the route options for the combination: a US prescription product, including the requirement to show what each component contributes; a US OTC monograph product or an application; the EU fixed-combination route; and where the cosmetic and medical-device boundaries sit. It checks each strength against approved products and each excipient level against FDA's Inactive Ingredient Database.",
+          "The formulation's plan adds compatibility work, multi-analyte methods, contribution-of-components studies, bridging studies above approved strengths and nanomaterial characterization to the critical path. Plans are planning estimates, the combination rules are new and still under review, and the brief states what it could not check. Brief customers can open the plan in a read-only view.",
+          "Sources include FDA's Inactive Ingredient Database, EMA's Article 57 data on centrally and nationally authorized products, OTC monograph listings in FDA's NDC directory and FDA's GRAS lists, alongside PubChem, ChEMBL, Europe PMC, ClinicalTrials.gov, EPO and Drugs@FDA/openFDA. Every claim is cited.",
           "Literature assistant, data interpreter and hypothesis generator, alongside your compound profiles and formulation records",
         ],
       },
@@ -76,6 +81,8 @@ const offerings: Offering[] = [
         label: "On your data",
         items: [
           "It never touches our pharma business. The Protocol Generator does go to public chemistry, literature and patent databases, and to the model that writes the prose. Every customer runs on their own deployment, and we put the data handling in writing before you upload anything.",
+          "On request, a read-only connector lets your AI research assistant answer questions about your briefs, formulations and plans, through the Model Context Protocol (MCP). Each person signs in with their own account, and every access is logged.",
+          "Coming: an assistant inside the platform that answers questions about your own records. It is in pilot now and is not yet part of a license.",
           "A support tool, not the last word. Your scientist, your regulatory lead and your patent attorney still decide.",
         ],
       },
