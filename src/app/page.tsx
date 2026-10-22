@@ -427,6 +427,39 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Free public tools. Not offerings: nothing to buy, so they stay out of the
+          services list and the contact form's menu. */}
+      <section id="free-tools" className="free-tools">
+        <div className="wrap">
+          <div className="sec-header">
+            <div className="label">04 / Free tools</div>
+            <h2>
+              Check the work, <em>not just the claim.</em>
+            </h2>
+          </div>
+          <div className="tools">
+            <a className="tool" href="https://check.graticus.com">
+              <div className="name">Answer Check</div>
+              <p>
+                Paste an answer from any AI chatbot. It reads each source the answer cites and
+                shows which numbers and quotes are really in it, and it can help you ask a fairer
+                question first. No account needed.
+              </p>
+              <span className="go">check.graticus.com &rarr;</span>
+            </a>
+            <a className="tool" href="https://verify.graticus.com/verify.html">
+              <div className="name">Certificate check</div>
+              <p>
+                Confirm a document has not changed since it was sealed: trial protocols, analysis
+                plans, development briefs and Answer Check receipts. The check runs on your own
+                computer.
+              </p>
+              <span className="go">verify.graticus.com &rarr;</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="positioning">
         <div className="wrap">
           <blockquote>
@@ -491,6 +524,11 @@ export default function Home() {
               <h5>Sign in</h5>
               <a href="https://platform.graticus.com">Graticus Platform</a>
               <a href="https://app.graticus.com">Training</a>
+            </div>
+            <div className="col">
+              <h5>Free tools</h5>
+              <a href="https://check.graticus.com">Answer Check</a>
+              <a href="https://verify.graticus.com/verify.html">Certificate check</a>
             </div>
             <div className="col">
               <h5>Connect</h5>
