@@ -1,0 +1,1273 @@
+{
+  "plan_sha256": "209f3eb85382222eb46fb71059c7bcd76b23daa56845434c477f62fabeb9fda8",
+  "corpus_sha256": "88b65547fa677f9fa71e6256472a21a4cd7a467033e067b349e05bbaeaf546fc",
+  "draw": {
+    "block": "0000000000000000000137cb7f959583db0ea161ac596bad33c91d6b36aa0495",
+    "seed": "ee1d05e9b9ac43ef3cb45cf349975987540bb8f73fdd0ea0d130c95a55b41f07"
+  },
+  "M1": {
+    "k": 4,
+    "n": 119,
+    "share": 0.03361344537815126,
+    "ci95": [
+      0.013147540181404155,
+      0.08324977147848957
+    ],
+    "verdict": "met"
+  },
+  "M2": {
+    "k": 74,
+    "n": 89,
+    "share": 0.8314606741573034,
+    "ci95": [
+      0.7403726049688804,
+      0.8951183818301409
+    ],
+    "verdict": "not met"
+  },
+  "M3": {
+    "k": 98,
+    "n": 100,
+    "share": 0.98,
+    "ci95": [
+      0.9299868370580063,
+      0.9944981477650318
+    ],
+    "verdict": "met"
+  },
+  "M4": {
+    "k": 120,
+    "n": 120,
+    "share": 1,
+    "ci95": [
+      0.9689797289440706,
+      1
+    ],
+    "verdict": "met"
+  },
+  "M5": {
+    "answers": 120,
+    "failedCollections": 0,
+    "answersWithNoCitedClaims": 1,
+    "sourcesUnreadable": 83,
+    "sourcesRead": 308,
+    "claimsNothingToCheck": 185,
+    "cantTell": [
+      {
+        "id": "Q10-claude#c12i0",
+        "reason": "a required part of this site couldn't load"
+      },
+      {
+        "id": "Q35-claude#c11i1",
+        "reason": "the article doesn't show up"
+      },
+      {
+        "id": "Q40-claude#c0i0",
+        "reason": "says \"read more\" and I cant"
+      },
+      {
+        "id": "Q17-chatgpt#c3i0",
+        "reason": "too many \"loading paragraphs\""
+      },
+      {
+        "id": "Q10-claude#c8i0",
+        "reason": "A required part of this site couldn't load"
+      },
+      {
+        "id": "Q35-claude#c11i0",
+        "reason": "just showing a headline"
+      },
+      {
+        "id": "Q10-claude#c4i0",
+        "reason": "site didn't load"
+      },
+      {
+        "id": "Q10-claude#c4i1",
+        "reason": "required part of this site didn't load"
+      },
+      {
+        "id": "Q17-chatgpt#c1i1",
+        "reason": "loading paragraph"
+      },
+      {
+        "id": "Q40-claude#c2i0",
+        "reason": "cant read more"
+      },
+      {
+        "id": "Q35-chatgpt#c3i0",
+        "reason": "We've moved"
+      },
+      {
+        "id": "Q22-claude#c2i0",
+        "reason": "there are some embeds"
+      },
+      {
+        "id": "Q10-claude#c4i3",
+        "reason": "couldn't load"
+      },
+      {
+        "id": "Q10-claude#c4i2",
+        "reason": "part of the site didn't load"
+      },
+      {
+        "id": "Q20-chatgpt#c2i0",
+        "reason": "there were links to download"
+      },
+      {
+        "id": "Q38-chatgpt#c0i1",
+        "reason": "read online"
+      },
+      {
+        "id": "Q40-claude#c0i1",
+        "reason": "read more"
+      }
+    ]
+  },
+  "M6": [],
+  "M7": {
+    "claude": {
+      "items": 556,
+      "estimatedUnsupportedShare": 0.02652149919754555
+    },
+    "chatgpt": {
+      "items": 63,
+      "estimatedUnsupportedShare": 0.18922558922558924
+    },
+    "perplexity": {
+      "items": 51,
+      "estimatedUnsupportedShare": 0.19607843137254902
+    }
+  },
+  "agreement": {
+    "overlap": 56,
+    "agreedBeforeDiscussion": 50,
+    "cohensKappa": 0.655737704918033
+  },
+  "labels": {
+    "Q34-perplexity#c2i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q27-claude#c5i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q15-perplexity#c0i0": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q01-claude#c1i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q27-chatgpt#c0i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q19-perplexity#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q07-claude#c8i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q34-claude#c2i1": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q37-claude#c10i5": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q26-claude#c7i2": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q17-claude#c10i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q34-claude#c5i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q18-claude#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q17-claude#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q19-chatgpt#c0i2": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q22-claude#c8i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q25-claude#c1i2": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q29-claude#c10i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q12-chatgpt#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q13-claude#c4i4": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q27-claude#c7i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q09-claude#c4i1": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q16-claude#c5i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q16-claude#c4i4": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q02-claude#c4i2": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q35-chatgpt#c0i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q13-claude#c4i2": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q31-claude#c6i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q10-claude#c11i1": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q04-claude#c3i1": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q20-claude#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c3i6": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q14-claude#c4i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q07-claude#c6i5": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q16-claude#c4i3": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q38-claude#c12i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q11-perplexity#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q40-claude#c7i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q13-claude#c4i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q14-perplexity#c0i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c8i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q37-claude#c0i2": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q02-chatgpt#c2i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q28-claude#c6i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q07-claude#c6i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q25-claude#c3i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q37-claude#c6i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q22-claude#c3i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q10-claude#c2i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q05-claude#c0i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q13-claude#c4i3": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q34-claude#c8i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q19-chatgpt#c0i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q31-claude#c4i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q25-claude#c1i3": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q07-claude#c6i4": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q33-claude#c3i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q35-claude#c7i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q28-claude#c1i1": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q20-claude#c4i0": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q04-claude#c2i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q16-claude#c4i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q27-claude#c1i1": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q08-claude#c5i3": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q27-claude#c5i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q01-claude#c11i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q02-chatgpt#c3i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q01-claude#c3i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q29-claude#c9i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q39-claude#c8i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q34-claude#c9i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q38-claude#c1i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q24-claude#c2i1": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q18-claude#c0i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q18-claude#c6i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q03-claude#c1i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q07-claude#c2i1": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q19-chatgpt#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q16-claude#c2i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q35-chatgpt#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q05-chatgpt#c1i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q17-claude#c8i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q29-claude#c4i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q39-claude#c3i2": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q28-claude#c7i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q38-claude#c12i2": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q20-claude#c1i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q18-claude#c4i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q12-claude#c9i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q33-claude#c1i1": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q29-claude#c0i3": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q26-claude#c8i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q10-claude#c10i3": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c3i2": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q24-claude#c7i1": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q18-claude#c4i0": {
+      "first": "SUPPORTED",
+      "second": "CANT_TELL",
+      "final": "SUPPORTED"
+    },
+    "Q28-claude#c1i3": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q13-chatgpt#c0i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q01-claude#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q01-chatgpt#c2i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q09-claude#c1i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q21-claude#c8i3": {
+      "first": "SUPPORTED",
+      "second": "CANT_TELL",
+      "final": "SUPPORTED"
+    },
+    "Q01-claude#c4i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q32-claude#c3i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q07-chatgpt#c1i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q12-chatgpt#c0i2": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q29-claude#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q14-claude#c5i1": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q17-chatgpt#c1i1": {
+      "first": "CANT_TELL",
+      "second": null,
+      "final": "CANT_TELL"
+    },
+    "Q17-claude#c8i3": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q39-claude#c1i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q03-claude#c5i1": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q23-claude#c4i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q26-claude#c1i2": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q34-claude#c7i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q24-claude#c5i3": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q10-perplexity#c1i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q04-claude#c3i3": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q39-claude#c6i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q02-chatgpt#c3i0": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q38-chatgpt#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q10-claude#c1i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c2i7": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q26-chatgpt#c0i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q23-claude#c7i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q32-chatgpt#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q10-claude#c4i0": {
+      "first": "CANT_TELL",
+      "second": null,
+      "final": "CANT_TELL"
+    },
+    "Q08-claude#c2i14": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q21-chatgpt#c1i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q20-chatgpt#c2i0": {
+      "first": "CANT_TELL",
+      "second": "CANT_TELL",
+      "final": "CANT_TELL"
+    },
+    "Q10-claude#c1i2": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q39-claude#c4i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q10-claude#c4i3": {
+      "first": "CANT_TELL",
+      "second": null,
+      "final": "CANT_TELL"
+    },
+    "Q40-claude#c4i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q33-claude#c8i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q21-chatgpt#c2i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q38-claude#c0i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q11-claude#c0i0": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q18-claude#c9i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q17-claude#c9i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c2i9": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q33-perplexity#c0i1": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q08-claude#c2i2": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c2i11": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q22-claude#c7i2": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q22-claude#c1i0": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q40-claude#c0i0": {
+      "first": "CANT_TELL",
+      "second": null,
+      "final": "CANT_TELL"
+    },
+    "Q23-perplexity#c0i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c2i18": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q10-claude#c8i0": {
+      "first": "CANT_TELL",
+      "second": "CANT_TELL",
+      "final": "CANT_TELL"
+    },
+    "Q11-perplexity#c1i0": {
+      "first": "NOT_SUPPORTED",
+      "second": "NOT_SUPPORTED",
+      "final": "NOT_SUPPORTED"
+    },
+    "Q30-claude#c6i0": {
+      "first": "NOT_SUPPORTED",
+      "second": "NOT_SUPPORTED",
+      "final": "NOT_SUPPORTED"
+    },
+    "Q03-claude#c0i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c2i5": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q39-chatgpt#c0i0": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q11-claude#c0i2": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q31-perplexity#c0i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q10-claude#c12i0": {
+      "first": "CANT_TELL",
+      "second": null,
+      "final": "CANT_TELL"
+    },
+    "Q30-claude#c4i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q24-chatgpt#c0i0": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q08-claude#c2i16": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q13-perplexity#c0i2": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c2i17": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q11-perplexity#c1i1": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q35-chatgpt#c4i1": {
+      "first": "NOT_SUPPORTED",
+      "second": "NOT_SUPPORTED",
+      "final": "NOT_SUPPORTED"
+    },
+    "Q23-claude#c7i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q13-perplexity#c0i4": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q38-chatgpt#c3i1": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q23-claude#c1i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q36-claude#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q20-chatgpt#c2i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q39-chatgpt#c0i1": {
+      "first": "NOT_SUPPORTED",
+      "second": "NOT_SUPPORTED",
+      "final": "NOT_SUPPORTED"
+    },
+    "Q38-chatgpt#c3i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q24-chatgpt#c0i1": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q31-perplexity#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q25-chatgpt#c1i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c2i3": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q17-chatgpt#c3i0": {
+      "first": "CANT_TELL",
+      "second": "NOT_SUPPORTED",
+      "final": "CANT_TELL"
+    },
+    "Q24-chatgpt#c0i2": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q18-claude#c3i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q25-chatgpt#c0i1": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q09-claude#c0i0": {
+      "first": "SUPPORTED",
+      "second": "NOT_SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q10-claude#c7i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q39-perplexity#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c2i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q36-claude#c0i2": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q25-chatgpt#c1i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q10-claude#c4i1": {
+      "first": "CANT_TELL",
+      "second": null,
+      "final": "CANT_TELL"
+    },
+    "Q38-chatgpt#c0i1": {
+      "first": "CANT_TELL",
+      "second": null,
+      "final": "CANT_TELL"
+    },
+    "Q14-claude#c3i3": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c2i6": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q17-chatgpt#c1i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c2i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q35-chatgpt#c3i0": {
+      "first": "CANT_TELL",
+      "second": null,
+      "final": "CANT_TELL"
+    },
+    "Q03-claude#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q30-claude#c2i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q02-chatgpt#c0i1": {
+      "first": "NOT_SUPPORTED",
+      "second": null,
+      "final": "NOT_SUPPORTED"
+    },
+    "Q17-claude#c9i1": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c2i4": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c2i10": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q40-claude#c2i0": {
+      "first": "CANT_TELL",
+      "second": null,
+      "final": "CANT_TELL"
+    },
+    "Q08-claude#c2i15": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q32-claude#c4i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c2i8": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q31-chatgpt#c0i0": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q21-chatgpt#c0i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q17-claude#c9i2": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q22-claude#c7i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q30-claude#c2i1": {
+      "first": "SUPPORTED",
+      "second": "CANT_TELL",
+      "final": "SUPPORTED"
+    },
+    "Q21-chatgpt#c0i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q11-claude#c0i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q36-claude#c0i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q35-claude#c11i1": {
+      "first": "CANT_TELL",
+      "second": null,
+      "final": "CANT_TELL"
+    },
+    "Q22-claude#c7i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c7i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q40-claude#c0i1": {
+      "first": "CANT_TELL",
+      "second": null,
+      "final": "CANT_TELL"
+    },
+    "Q08-claude#c2i13": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q14-claude#c3i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q35-claude#c11i0": {
+      "first": "CANT_TELL",
+      "second": "NOT_SUPPORTED",
+      "final": "CANT_TELL"
+    },
+    "Q23-claude#c1i1": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q08-claude#c2i12": {
+      "first": "SUPPORTED",
+      "second": "SUPPORTED",
+      "final": "SUPPORTED"
+    },
+    "Q10-claude#c4i2": {
+      "first": "CANT_TELL",
+      "second": null,
+      "final": "CANT_TELL"
+    },
+    "Q23-claude#c1i2": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q21-claude#c6i0": {
+      "first": "SUPPORTED",
+      "second": null,
+      "final": "SUPPORTED"
+    },
+    "Q22-claude#c2i0": {
+      "first": "CANT_TELL",
+      "second": null,
+      "final": "CANT_TELL"
+    }
+  }
+}

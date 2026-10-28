@@ -1,0 +1,179 @@
+{
+  "labeller": "second",
+  "savedAt": "2026-10-28T19:20:17.425Z",
+  "labels": {
+    "Q16-claude#c4i0": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i4": {
+      "label": "SUPPORTED"
+    },
+    "Q09-claude#c4i1": {
+      "label": "SUPPORTED"
+    },
+    "Q13-claude#c4i2": {
+      "label": "SUPPORTED"
+    },
+    "Q30-claude#c2i1": {
+      "label": "CANT_TELL",
+      "reason": "406,700 is in the article but is not recognized due to comma"
+    },
+    "Q10-perplexity#c1i0": {
+      "label": "SUPPORTED"
+    },
+    "Q34-claude#c7i0": {
+      "label": "SUPPORTED"
+    },
+    "Q18-claude#c9i0": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i8": {
+      "label": "SUPPORTED"
+    },
+    "Q14-perplexity#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q01-chatgpt#c2i0": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i12": {
+      "label": "SUPPORTED"
+    },
+    "Q25-claude#c1i3": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c5i3": {
+      "label": "SUPPORTED"
+    },
+    "Q30-claude#c4i0": {
+      "label": "SUPPORTED"
+    },
+    "Q07-claude#c2i1": {
+      "label": "SUPPORTED"
+    },
+    "Q33-claude#c8i0": {
+      "label": "SUPPORTED"
+    },
+    "Q18-claude#c4i0": {
+      "label": "CANT_TELL",
+      "reason": "12,600 is not recognized due to the comma "
+    },
+    "Q24-claude#c2i1": {
+      "label": "SUPPORTED"
+    },
+    "Q35-chatgpt#c4i1": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q14-claude#c5i1": {
+      "label": "SUPPORTED"
+    },
+    "Q31-claude#c4i0": {
+      "label": "SUPPORTED"
+    },
+    "Q24-claude#c7i1": {
+      "label": "SUPPORTED"
+    },
+    "Q17-chatgpt#c3i0": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q08-claude#c2i10": {
+      "label": "SUPPORTED"
+    },
+    "Q23-perplexity#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q10-claude#c8i0": {
+      "label": "CANT_TELL",
+      "reason": "A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser."
+    },
+    "Q10-claude#c11i1": {
+      "label": "SUPPORTED"
+    },
+    "Q25-claude#c1i2": {
+      "label": "SUPPORTED"
+    },
+    "Q28-claude#c1i1": {
+      "label": "SUPPORTED"
+    },
+    "Q03-claude#c5i1": {
+      "label": "SUPPORTED"
+    },
+    "Q35-claude#c11i0": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q39-claude#c1i0": {
+      "label": "SUPPORTED"
+    },
+    "Q31-chatgpt#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q21-claude#c8i3": {
+      "label": "CANT_TELL",
+      "reason": "5 vs. five "
+    },
+    "Q38-chatgpt#c3i1": {
+      "label": "SUPPORTED"
+    },
+    "Q39-chatgpt#c0i1": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q04-claude#c3i1": {
+      "label": "SUPPORTED"
+    },
+    "Q09-claude#c0i0": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q38-chatgpt#c3i0": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i5": {
+      "label": "SUPPORTED"
+    },
+    "Q34-perplexity#c2i0": {
+      "label": "SUPPORTED"
+    },
+    "Q39-claude#c3i2": {
+      "label": "SUPPORTED"
+    },
+    "Q34-claude#c2i1": {
+      "label": "SUPPORTED"
+    },
+    "Q34-claude#c5i0": {
+      "label": "SUPPORTED"
+    },
+    "Q40-claude#c4i0": {
+      "label": "SUPPORTED"
+    },
+    "Q28-claude#c1i3": {
+      "label": "SUPPORTED"
+    },
+    "Q02-claude#c4i2": {
+      "label": "SUPPORTED"
+    },
+    "Q30-claude#c6i0": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q13-chatgpt#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q17-claude#c9i1": {
+      "label": "SUPPORTED"
+    },
+    "Q33-claude#c1i1": {
+      "label": "SUPPORTED"
+    },
+    "Q26-chatgpt#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q11-perplexity#c1i0": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q38-claude#c12i2": {
+      "label": "SUPPORTED"
+    },
+    "Q20-chatgpt#c2i0": {
+      "label": "CANT_TELL",
+      "reason": "could not identify due to comma in 6,300"
+    }
+  }
+}
