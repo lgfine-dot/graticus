@@ -457,6 +457,11 @@ export default function Home() {
               <span className="go">verify.graticus.com &rarr;</span>
             </a>
           </div>
+          <p className="tools-note">
+            How accurate is Answer Check? We tested it against people&rsquo;s judgment and published the
+            results, including the measure it failed.{" "}
+            <a href="/answer-check/results">Read the results &rarr;</a>
+          </p>
         </div>
       </section>
 
@@ -528,6 +533,7 @@ export default function Home() {
             <div className="col">
               <h5>Free tools</h5>
               <a href="https://check.graticus.com">Answer Check</a>
+              <a href="/answer-check/results">Answer Check results</a>
               <a href="https://verify.graticus.com/verify.html">Certificate check</a>
             </div>
             <div className="col">

@@ -589,3 +589,5 @@ footer .bottom-row a { color: oklch(0.82 0.04 255); text-decoration: none; }
   .measures { grid-template-columns: 1fr; }
   .report { padding: 48px 0 72px; }
 }
+.tools-note { margin: 28px 0 0; font-size: 15px; color: var(--ink-soft); line-height: 1.6; max-width: 70ch; }
+.tools-note a { color: var(--blue-700); }
