@@ -1,0 +1,698 @@
+{
+  "labeller": "first",
+  "savedAt": "2026-10-28T14:47:11.809Z",
+  "labels": {
+    "Q38-claude#c12i1": {
+      "label": "SUPPORTED"
+    },
+    "Q35-claude#c7i0": {
+      "label": "SUPPORTED"
+    },
+    "Q21-chatgpt#c1i0": {
+      "label": "SUPPORTED"
+    },
+    "Q16-claude#c4i0": {
+      "label": "SUPPORTED"
+    },
+    "Q21-chatgpt#c2i0": {
+      "label": "SUPPORTED"
+    },
+    "Q04-claude#c3i3": {
+      "label": "SUPPORTED"
+    },
+    "Q17-chatgpt#c1i0": {
+      "label": "SUPPORTED"
+    },
+    "Q35-chatgpt#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q17-claude#c10i0": {
+      "label": "SUPPORTED"
+    },
+    "Q11-claude#c0i0": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q31-perplexity#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q20-claude#c4i0": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q08-claude#c2i4": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i9": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c3i6": {
+      "label": "SUPPORTED"
+    },
+    "Q25-claude#c3i1": {
+      "label": "SUPPORTED"
+    },
+    "Q11-claude#c0i2": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q08-claude#c2i7": {
+      "label": "SUPPORTED"
+    },
+    "Q24-chatgpt#c0i2": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q11-perplexity#c1i1": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q09-claude#c4i1": {
+      "label": "SUPPORTED"
+    },
+    "Q13-claude#c4i2": {
+      "label": "SUPPORTED"
+    },
+    "Q21-chatgpt#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q01-claude#c1i1": {
+      "label": "SUPPORTED"
+    },
+    "Q16-claude#c4i4": {
+      "label": "SUPPORTED"
+    },
+    "Q10-claude#c12i0": {
+      "label": "CANT_TELL",
+      "reason": "a required part of this site couldn't load"
+    },
+    "Q02-chatgpt#c2i1": {
+      "label": "SUPPORTED"
+    },
+    "Q22-claude#c3i0": {
+      "label": "SUPPORTED"
+    },
+    "Q10-claude#c2i0": {
+      "label": "SUPPORTED"
+    },
+    "Q24-chatgpt#c0i1": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q39-claude#c8i0": {
+      "label": "SUPPORTED"
+    },
+    "Q30-claude#c2i1": {
+      "label": "SUPPORTED"
+    },
+    "Q10-perplexity#c1i0": {
+      "label": "SUPPORTED"
+    },
+    "Q03-claude#c0i1": {
+      "label": "SUPPORTED"
+    },
+    "Q34-claude#c7i0": {
+      "label": "SUPPORTED"
+    },
+    "Q28-claude#c7i0": {
+      "label": "SUPPORTED"
+    },
+    "Q18-claude#c9i0": {
+      "label": "SUPPORTED"
+    },
+    "Q31-claude#c6i0": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i8": {
+      "label": "SUPPORTED"
+    },
+    "Q14-perplexity#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q19-perplexity#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q23-claude#c7i0": {
+      "label": "SUPPORTED"
+    },
+    "Q22-claude#c1i0": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q01-claude#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q01-chatgpt#c2i0": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i12": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i2": {
+      "label": "SUPPORTED"
+    },
+    "Q13-perplexity#c0i2": {
+      "label": "SUPPORTED"
+    },
+    "Q35-claude#c11i1": {
+      "label": "CANT_TELL",
+      "reason": "the article doesn't show up"
+    },
+    "Q01-claude#c3i0": {
+      "label": "SUPPORTED"
+    },
+    "Q25-claude#c1i3": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i3": {
+      "label": "SUPPORTED"
+    },
+    "Q38-claude#c0i1": {
+      "label": "SUPPORTED"
+    },
+    "Q34-claude#c9i0": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c5i3": {
+      "label": "SUPPORTED"
+    },
+    "Q03-claude#c1i0": {
+      "label": "SUPPORTED"
+    },
+    "Q36-claude#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q19-chatgpt#c0i1": {
+      "label": "SUPPORTED"
+    },
+    "Q22-claude#c7i1": {
+      "label": "SUPPORTED"
+    },
+    "Q30-claude#c4i0": {
+      "label": "SUPPORTED"
+    },
+    "Q26-claude#c7i2": {
+      "label": "SUPPORTED"
+    },
+    "Q25-chatgpt#c0i1": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q39-chatgpt#c0i0": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q29-claude#c0i3": {
+      "label": "SUPPORTED"
+    },
+    "Q04-claude#c2i1": {
+      "label": "SUPPORTED"
+    },
+    "Q18-claude#c4i1": {
+      "label": "SUPPORTED"
+    },
+    "Q27-claude#c5i1": {
+      "label": "SUPPORTED"
+    },
+    "Q07-claude#c2i1": {
+      "label": "SUPPORTED"
+    },
+    "Q01-claude#c4i0": {
+      "label": "SUPPORTED"
+    },
+    "Q33-claude#c8i0": {
+      "label": "SUPPORTED"
+    },
+    "Q17-claude#c8i1": {
+      "label": "SUPPORTED"
+    },
+    "Q18-claude#c4i0": {
+      "label": "SUPPORTED"
+    },
+    "Q24-claude#c2i1": {
+      "label": "SUPPORTED"
+    },
+    "Q35-chatgpt#c4i1": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q36-claude#c0i2": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i18": {
+      "label": "SUPPORTED"
+    },
+    "Q18-claude#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q27-claude#c7i1": {
+      "label": "SUPPORTED"
+    },
+    "Q14-claude#c5i1": {
+      "label": "SUPPORTED"
+    },
+    "Q31-claude#c4i0": {
+      "label": "SUPPORTED"
+    },
+    "Q16-claude#c4i3": {
+      "label": "SUPPORTED"
+    },
+    "Q23-claude#c1i1": {
+      "label": "SUPPORTED"
+    },
+    "Q40-claude#c0i0": {
+      "label": "CANT_TELL",
+      "reason": "says \"read more\" and I cant"
+    },
+    "Q39-claude#c4i1": {
+      "label": "SUPPORTED"
+    },
+    "Q02-chatgpt#c3i1": {
+      "label": "SUPPORTED"
+    },
+    "Q38-chatgpt#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q22-claude#c7i0": {
+      "label": "SUPPORTED"
+    },
+    "Q10-claude#c10i3": {
+      "label": "SUPPORTED"
+    },
+    "Q10-claude#c7i0": {
+      "label": "SUPPORTED"
+    },
+    "Q18-claude#c0i1": {
+      "label": "SUPPORTED"
+    },
+    "Q29-claude#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q24-claude#c7i1": {
+      "label": "SUPPORTED"
+    },
+    "Q24-claude#c5i3": {
+      "label": "SUPPORTED"
+    },
+    "Q11-perplexity#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q36-claude#c0i1": {
+      "label": "SUPPORTED"
+    },
+    "Q07-claude#c6i0": {
+      "label": "SUPPORTED"
+    },
+    "Q17-chatgpt#c3i0": {
+      "label": "CANT_TELL",
+      "reason": "too many \"loading paragraphs\""
+    },
+    "Q17-claude#c8i3": {
+      "label": "SUPPORTED"
+    },
+    "Q39-claude#c6i0": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i10": {
+      "label": "SUPPORTED"
+    },
+    "Q23-perplexity#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q23-claude#c1i0": {
+      "label": "SUPPORTED"
+    },
+    "Q33-claude#c3i1": {
+      "label": "SUPPORTED"
+    },
+    "Q10-claude#c8i0": {
+      "label": "CANT_TELL",
+      "reason": "A required part of this site couldn't load"
+    },
+    "Q05-chatgpt#c1i0": {
+      "label": "SUPPORTED"
+    },
+    "Q10-claude#c11i1": {
+      "label": "SUPPORTED"
+    },
+    "Q28-claude#c6i0": {
+      "label": "SUPPORTED"
+    },
+    "Q01-claude#c11i0": {
+      "label": "SUPPORTED"
+    },
+    "Q25-claude#c1i2": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c7i0": {
+      "label": "SUPPORTED"
+    },
+    "Q28-claude#c1i1": {
+      "label": "SUPPORTED"
+    },
+    "Q03-claude#c5i1": {
+      "label": "SUPPORTED"
+    },
+    "Q22-claude#c7i2": {
+      "label": "SUPPORTED"
+    },
+    "Q27-claude#c1i1": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q32-claude#c4i0": {
+      "label": "SUPPORTED"
+    },
+    "Q37-claude#c0i2": {
+      "label": "SUPPORTED"
+    },
+    "Q35-claude#c11i0": {
+      "label": "CANT_TELL",
+      "reason": "just showing a headline"
+    },
+    "Q27-claude#c5i0": {
+      "label": "SUPPORTED"
+    },
+    "Q39-claude#c1i0": {
+      "label": "SUPPORTED"
+    },
+    "Q33-perplexity#c0i1": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q31-chatgpt#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i0": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i1": {
+      "label": "SUPPORTED"
+    },
+    "Q10-claude#c4i0": {
+      "label": "CANT_TELL",
+      "reason": "site didn't load"
+    },
+    "Q31-perplexity#c0i1": {
+      "label": "SUPPORTED"
+    },
+    "Q19-chatgpt#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q37-claude#c10i5": {
+      "label": "SUPPORTED"
+    },
+    "Q21-claude#c8i3": {
+      "label": "SUPPORTED"
+    },
+    "Q21-claude#c6i0": {
+      "label": "SUPPORTED"
+    },
+    "Q38-chatgpt#c3i1": {
+      "label": "SUPPORTED"
+    },
+    "Q10-claude#c4i1": {
+      "label": "CANT_TELL",
+      "reason": "required part of this site didn't load"
+    },
+    "Q39-chatgpt#c0i1": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q12-chatgpt#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i13": {
+      "label": "SUPPORTED"
+    },
+    "Q07-claude#c6i4": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c3i2": {
+      "label": "SUPPORTED"
+    },
+    "Q39-perplexity#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q04-claude#c3i1": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i17": {
+      "label": "SUPPORTED"
+    },
+    "Q34-claude#c8i0": {
+      "label": "SUPPORTED"
+    },
+    "Q17-chatgpt#c1i1": {
+      "label": "CANT_TELL",
+      "reason": "loading paragraph"
+    },
+    "Q09-claude#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q23-claude#c4i0": {
+      "label": "SUPPORTED"
+    },
+    "Q07-claude#c8i0": {
+      "label": "SUPPORTED"
+    },
+    "Q30-claude#c2i0": {
+      "label": "SUPPORTED"
+    },
+    "Q38-claude#c1i0": {
+      "label": "SUPPORTED"
+    },
+    "Q38-chatgpt#c3i0": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i5": {
+      "label": "SUPPORTED"
+    },
+    "Q34-perplexity#c2i0": {
+      "label": "SUPPORTED"
+    },
+    "Q02-chatgpt#c0i1": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q10-claude#c1i2": {
+      "label": "SUPPORTED"
+    },
+    "Q39-claude#c3i2": {
+      "label": "SUPPORTED"
+    },
+    "Q34-claude#c2i1": {
+      "label": "SUPPORTED"
+    },
+    "Q37-claude#c6i0": {
+      "label": "SUPPORTED"
+    },
+    "Q21-chatgpt#c0i1": {
+      "label": "SUPPORTED"
+    },
+    "Q03-claude#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q32-chatgpt#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q40-claude#c2i0": {
+      "label": "CANT_TELL",
+      "reason": "cant read more"
+    },
+    "Q34-claude#c5i0": {
+      "label": "SUPPORTED"
+    },
+    "Q25-chatgpt#c1i0": {
+      "label": "SUPPORTED"
+    },
+    "Q22-claude#c8i1": {
+      "label": "SUPPORTED"
+    },
+    "Q40-claude#c4i0": {
+      "label": "SUPPORTED"
+    },
+    "Q17-claude#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q17-claude#c9i2": {
+      "label": "SUPPORTED"
+    },
+    "Q10-claude#c1i1": {
+      "label": "SUPPORTED"
+    },
+    "Q12-claude#c9i0": {
+      "label": "SUPPORTED"
+    },
+    "Q20-chatgpt#c2i1": {
+      "label": "SUPPORTED"
+    },
+    "Q28-claude#c1i3": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i16": {
+      "label": "SUPPORTED"
+    },
+    "Q23-claude#c1i2": {
+      "label": "SUPPORTED"
+    },
+    "Q35-chatgpt#c3i0": {
+      "label": "CANT_TELL",
+      "reason": "We've moved"
+    },
+    "Q02-claude#c4i2": {
+      "label": "SUPPORTED"
+    },
+    "Q30-claude#c6i0": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q08-claude#c2i11": {
+      "label": "SUPPORTED"
+    },
+    "Q25-chatgpt#c1i1": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i15": {
+      "label": "SUPPORTED"
+    },
+    "Q20-claude#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q27-chatgpt#c0i1": {
+      "label": "SUPPORTED"
+    },
+    "Q13-claude#c4i4": {
+      "label": "SUPPORTED"
+    },
+    "Q11-claude#c0i1": {
+      "label": "SUPPORTED"
+    },
+    "Q22-claude#c2i0": {
+      "label": "CANT_TELL",
+      "reason": "there are some embeds"
+    },
+    "Q18-claude#c6i0": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c8i0": {
+      "label": "SUPPORTED"
+    },
+    "Q07-claude#c6i5": {
+      "label": "SUPPORTED"
+    },
+    "Q32-claude#c3i1": {
+      "label": "SUPPORTED"
+    },
+    "Q13-chatgpt#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q17-claude#c9i0": {
+      "label": "SUPPORTED"
+    },
+    "Q23-claude#c7i1": {
+      "label": "SUPPORTED"
+    },
+    "Q40-claude#c7i0": {
+      "label": "SUPPORTED"
+    },
+    "Q10-claude#c4i3": {
+      "label": "CANT_TELL",
+      "reason": "couldn't load"
+    },
+    "Q08-claude#c2i6": {
+      "label": "SUPPORTED"
+    },
+    "Q13-claude#c4i0": {
+      "label": "SUPPORTED"
+    },
+    "Q26-claude#c8i1": {
+      "label": "SUPPORTED"
+    },
+    "Q17-claude#c9i1": {
+      "label": "SUPPORTED"
+    },
+    "Q13-claude#c4i3": {
+      "label": "SUPPORTED"
+    },
+    "Q20-claude#c1i1": {
+      "label": "SUPPORTED"
+    },
+    "Q33-claude#c1i1": {
+      "label": "SUPPORTED"
+    },
+    "Q14-claude#c4i1": {
+      "label": "SUPPORTED"
+    },
+    "Q26-chatgpt#c0i0": {
+      "label": "SUPPORTED"
+    },
+    "Q11-perplexity#c1i0": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q10-claude#c4i2": {
+      "label": "CANT_TELL",
+      "reason": "part of the site didn't load"
+    },
+    "Q24-chatgpt#c0i0": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q16-claude#c2i1": {
+      "label": "SUPPORTED"
+    },
+    "Q38-claude#c12i2": {
+      "label": "SUPPORTED"
+    },
+    "Q13-perplexity#c0i4": {
+      "label": "SUPPORTED"
+    },
+    "Q05-claude#c0i1": {
+      "label": "SUPPORTED"
+    },
+    "Q20-chatgpt#c2i0": {
+      "label": "CANT_TELL",
+      "reason": "there were links to download"
+    },
+    "Q19-chatgpt#c0i2": {
+      "label": "SUPPORTED"
+    },
+    "Q38-chatgpt#c0i1": {
+      "label": "CANT_TELL",
+      "reason": "read online"
+    },
+    "Q02-chatgpt#c3i0": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q12-chatgpt#c0i2": {
+      "label": "SUPPORTED"
+    },
+    "Q14-claude#c3i3": {
+      "label": "SUPPORTED"
+    },
+    "Q40-claude#c0i1": {
+      "label": "CANT_TELL",
+      "reason": "read more"
+    },
+    "Q15-perplexity#c0i0": {
+      "label": "NOT_SUPPORTED"
+    },
+    "Q18-claude#c3i0": {
+      "label": "SUPPORTED"
+    },
+    "Q08-claude#c2i14": {
+      "label": "SUPPORTED"
+    },
+    "Q14-claude#c3i1": {
+      "label": "SUPPORTED"
+    },
+    "Q07-chatgpt#c1i0": {
+      "label": "SUPPORTED"
+    },
+    "Q26-claude#c1i2": {
+      "label": "SUPPORTED"
+    },
+    "Q29-claude#c9i0": {
+      "label": "SUPPORTED"
+    },
+    "Q29-claude#c4i1": {
+      "label": "SUPPORTED"
+    },
+    "Q09-claude#c1i0": {
+      "label": "SUPPORTED"
+    },
+    "Q35-chatgpt#c0i1": {
+      "label": "SUPPORTED"
+    },
+    "Q29-claude#c10i0": {
+      "label": "SUPPORTED"
+    },
+    "Q16-claude#c5i0": {
+      "label": "SUPPORTED"
+    }
+  }
+}
