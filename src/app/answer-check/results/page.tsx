@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Graticule from "@/components/Graticule";
 import results from "../../../../public/answer-check/round-1/results.json";
+import corpus from "../../../../public/answer-check/round-1/corpus.canonical.json";
+import draw from "../../../../public/answer-check/round-1/draw.json";
 
 /*
  * Answer Check evaluation, round 1. The figures come from the sealed results file
@@ -50,11 +52,34 @@ const measures = [
   },
 ];
 
-const assistants = [
-  ["Claude", results.M7.claude],
-  ["ChatGPT", results.M7.chatgpt],
-  ["Perplexity", results.M7.perplexity],
-] as const;
+// Per-assistant counts, worked out from the sealed corpus and draw so readers can see how
+// much evidence each estimate rests on.
+const itemById = new Map(corpus.items.map((i) => [i.id, i]));
+const labelled = [...draw.found, ...draw.notFound];
+const assistants = (
+  [
+    ["Claude", "claude"],
+    ["ChatGPT", "chatgpt"],
+    ["Perplexity", "perplexity"],
+  ] as const
+).map(([name, key]) => {
+  const items = corpus.items.filter((i) => i.assistant === key);
+  const judged = labelled.filter((id) => {
+    const final = (results.labels as Record<string, { final: string | null }>)[id]?.final;
+    return itemById.get(id)?.assistant === key && final && final !== "CANT_TELL";
+  });
+  return {
+    name,
+    answers: corpus.answers.filter((x) => x.assistant === key).length,
+    answersWithFigures: new Set(items.map((i) => i.answerId)).size,
+    judged: judged.length,
+    notSupported: judged.filter(
+      (id) => (results.labels as Record<string, { final: string | null }>)[id].final === "NOT_SUPPORTED",
+    ).length,
+    estimate: results.M7[key].estimatedUnsupportedShare,
+    figures: results.M7[key].items,
+  };
+});
 
 const files = [
   ["plan.canonical.json", "The plan, sealed 22 October before any answer existed", "plan.proof.json"],
@@ -191,28 +216,40 @@ export default function AnswerCheckResults() {
             This measures the assistants, not Answer Check. Weighted back to all the figures they cited, the
             estimated share people judged not supported by the cited source:
           </p>
+          <div className="table-scroll">
           <table className="assist">
             <thead>
               <tr>
                 <th>Assistant</th>
-                <th>Figures checked</th>
-                <th>Estimated not supported</th>
+                <th>Answers</th>
+                <th>Citing a checkable figure</th>
+                <th>Figures cited</th>
+                <th>Judged by people</th>
+                <th>Not supported</th>
+                <th>Estimate</th>
               </tr>
             </thead>
             <tbody>
-              {assistants.map(([name, v]) => (
-                <tr key={name}>
-                  <td>{name}</td>
-                  <td>{v.items}</td>
-                  <td>{v.estimatedUnsupportedShare === null ? "—" : pct(v.estimatedUnsupportedShare, 0)}</td>
+              {assistants.map((v) => (
+                <tr key={v.name}>
+                  <td>{v.name}</td>
+                  <td>{v.answers}</td>
+                  <td>{v.answersWithFigures}</td>
+                  <td>{v.figures}</td>
+                  <td>{v.judged}</td>
+                  <td>{v.notSupported}</td>
+                  <td>{v.estimate === null ? "—" : pct(v.estimate, 0)}</td>
                 </tr>
               ))}
             </tbody>
           </table>
+          </div>
           <p className="note">
-            Treat this with care. Claude&rsquo;s answers cited far more checkable figures than the others, so
-            the ChatGPT and Perplexity estimates rest on few labelled items each. One run of 40 questions, one
-            model version each, in October 2026.
+            Treat this with care. Each assistant answered the same 40 questions, but every Claude answer cited
+            specific figures from its sources while only about half of the ChatGPT and Perplexity answers did,
+            so their estimates rest on few judged items: Perplexity&rsquo;s on{" "}
+            {assistants[2].judged}. The estimate weights the judged items back to all the figures each assistant
+            cited. One run of 40 questions, one model version each, in October 2026.
           </p>
 
           <h2>Check it yourself</h2>

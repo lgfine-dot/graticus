@@ -575,7 +575,8 @@ footer .bottom-row {
 .m-figs .mk { font-size: 13px; color: var(--muted); }
 .report .m-detail { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
 .report ul.plain { padding-left: 1.1em; display: flex; flex-direction: column; gap: 12px; margin: 0; }
-.assist { border-collapse: collapse; width: 100%; max-width: 520px; margin: 8px 0; font-size: 15px; }
+.table-scroll { overflow-x: auto; }
+.assist { border-collapse: collapse; width: 100%; min-width: 560px; margin: 8px 0; font-size: 15px; }
 .assist th, .assist td { text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); }
 .assist th { font-weight: 500; color: var(--ink); font-size: 13px; }
 .assist td:not(:first-child), .assist th:not(:first-child) { text-align: right; }
