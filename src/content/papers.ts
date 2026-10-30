@@ -17,14 +17,10 @@ export type Paper = {
 export const papers: Paper[] = [
   {
     title: "Managing Stability in an Age of Constant Change",
-    // PLACEHOLDER: replace with the real two-or-three-sentence summary.
     summary:
-      "[Placeholder summary: two or three sentences on what the paper argues and who it is for. Replace before publishing.]",
-    // PLACEHOLDER: set to the real publication date.
+      "AI has made change constant, and the classic change models assume a stable \"after\" that no longer arrives. This paper argues that stability is now the scarce resource leaders must manage on purpose, drawing on pharmaceutical change control, hospitality and professional services. It offers a four-question framework (Anchors, Capacity, Timing and Value) and a one-page stability check to use before the next change.",
     date: "2026-10-30",
     author: "Lawrence Fine",
-    // PLACEHOLDER: the file in public/papers/ is a one-page stand-in. Replace it with the real PDF
-    // under the same name, or change this name to match the new file.
     pdf: "managing-stability-in-an-age-of-constant-change.pdf",
   },
 ];
