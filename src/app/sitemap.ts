@@ -9,5 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: "https://graticus.com/", lastModified: "2026-10-28" },
     { url: "https://graticus.com/answer-check/results", lastModified: "2026-10-28" },
+    { url: "https://graticus.com/insights", lastModified: "2026-10-30" },
   ];
 }

@@ -96,7 +96,19 @@ nav.top .inner {
 }
 @media (max-width: 820px) {
   nav.top .inner { padding: 14px 24px; }
-  .nav-links a:not(.nav-cta) { display: none; }
+  /* Direct children only: the links inside the Sign in menu are not top-level
+     links and must not be hidden (they were, before this rule had the >). */
+  .nav-links > a:not(.nav-cta):not(.nav-keep) { display: none; }
+  /* Insights stays on phones: it is the page people arrive at from shared links,
+     and the anchor links above are only shortcuts down the same page. */
+  .nav-links { gap: 18px; }
+  /* Logo, Insights, Sign in and the button do not fit one row on most phones.
+     The links drop to a second row only when they have to. */
+  nav.top .inner { flex-wrap: wrap; row-gap: 12px; }
+  .nav-signin summary { white-space: nowrap; }
+  /* Sign in now sits near the left edge on phones; opening the menu leftward
+     from there would push it off screen. */
+  .nav-signin-menu { left: 0; right: auto; }
 }
 
 /* ---------- Hero ---------- */
@@ -591,3 +603,20 @@ footer .bottom-row a { color: oklch(0.82 0.04 255); text-decoration: none; }
 }
 .tools-note { margin: 28px 0 0; font-size: 15px; color: var(--ink-soft); line-height: 1.6; max-width: 70ch; }
 .tools-note a { color: var(--blue-700); }
+
+/* ---------- Insights (white papers) ---------- */
+.papers { list-style: none; padding: 0; margin: 48px 0 0; display: flex; flex-direction: column; }
+.paper { padding: 32px 0 36px; border-top: 1px solid var(--line); }
+.paper:last-child { border-bottom: 1px solid var(--line); }
+.report .paper h2 {
+  margin: 0 0 10px; padding: 0; border: 0;
+  font-size: clamp(24px, 3vw, 30px); line-height: 1.15; text-wrap: balance;
+}
+.paper-meta {
+  display: flex; flex-wrap: wrap; gap: 4px 10px;
+  font-family: 'JetBrains Mono'; font-size: 11px; letter-spacing: 0.18em;
+  color: var(--muted); text-transform: uppercase;
+}
+.report .paper p { margin: 16px 0 24px; max-width: 64ch; }
+.report .paper a.btn-primary { color: var(--bone); }
+.report .about-line { margin: 48px 0 0; font-size: 14px; color: var(--muted); }

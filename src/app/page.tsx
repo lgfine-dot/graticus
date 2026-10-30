@@ -227,6 +227,7 @@ export default function Home() {
             <a href="#services">Services</a>
             <a href="#approach">Approach</a>
             <a href="#industries">Industries</a>
+            <a href="/insights" className="nav-keep">Insights</a>
             {/* Two products, two sign-in addresses. A details element keeps the
                 static export free of client JavaScript, and unlike the anchor
                 links it stays visible on phones, where signing in matters most. */}
@@ -522,6 +523,7 @@ export default function Home() {
               <h5>Firm</h5>
               <a href="#approach">Approach</a>
               <a href="#industries">Industries</a>
+              <a href="/insights">Insights</a>
               <a href="https://biopharmagovernance.com">Board governance writing</a>
               <a href="#contact">Contact</a>
             </div>
@@ -545,7 +547,7 @@ export default function Home() {
             </div>
           </div>
           <div className="bottom-row">
-            <span>© 2026 Graticus Advisory, LLC</span>
+            <span>© 2026 AGCP Farmacêuticos, Lda</span>
             <span>Measured · Unconquered</span>
           </div>
         </div>
