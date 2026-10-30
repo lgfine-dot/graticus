@@ -591,3 +591,20 @@ footer .bottom-row a { color: oklch(0.82 0.04 255); text-decoration: none; }
 }
 .tools-note { margin: 28px 0 0; font-size: 15px; color: var(--ink-soft); line-height: 1.6; max-width: 70ch; }
 .tools-note a { color: var(--blue-700); }
+
+/* ---------- Insights (white papers) ---------- */
+.papers { list-style: none; padding: 0; margin: 48px 0 0; display: flex; flex-direction: column; }
+.paper { padding: 32px 0 36px; border-top: 1px solid var(--line); }
+.paper:last-child { border-bottom: 1px solid var(--line); }
+.report .paper h2 {
+  margin: 0 0 10px; padding: 0; border: 0;
+  font-size: clamp(24px, 3vw, 30px); line-height: 1.15; text-wrap: balance;
+}
+.paper-meta {
+  display: flex; flex-wrap: wrap; gap: 4px 10px;
+  font-family: 'JetBrains Mono'; font-size: 11px; letter-spacing: 0.18em;
+  color: var(--muted); text-transform: uppercase;
+}
+.report .paper p { margin: 16px 0 24px; max-width: 64ch; }
+.report .paper a.btn-primary { color: var(--bone); }
+.report .about-line { margin: 48px 0 0; font-size: 14px; color: var(--muted); }

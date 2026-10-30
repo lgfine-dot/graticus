@@ -227,6 +227,7 @@ export default function Home() {
             <a href="#services">Services</a>
             <a href="#approach">Approach</a>
             <a href="#industries">Industries</a>
+            <a href="/insights">Insights</a>
             {/* Two products, two sign-in addresses. A details element keeps the
                 static export free of client JavaScript, and unlike the anchor
                 links it stays visible on phones, where signing in matters most. */}
