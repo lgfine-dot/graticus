@@ -294,7 +294,7 @@ export default function AnswerCheckResults() {
       <footer>
         <div className="wrap">
           <div className="bottom-row">
-            <span>© 2026 Graticus Advisory, LLC</span>
+            <span>© 2026 AGCP Farmacêuticos, Lda</span>
             <a href="/">graticus.com</a>
           </div>
         </div>
