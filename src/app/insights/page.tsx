@@ -82,7 +82,7 @@ export default function Insights() {
                   <span>{p.author}</span>
                 </div>
                 <p>{p.summary}</p>
-                <a className="btn-primary" href={`/papers/${p.pdf}`} download>
+                <a className="btn-primary" href={`/download/${p.pdf}`} download>
                   Download PDF <span className="arrow">&darr;</span>
                 </a>
               </li>
