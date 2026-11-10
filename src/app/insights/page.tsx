@@ -11,7 +11,7 @@ import { papers } from "@/content/papers";
  */
 const title = "Insights: white papers from Graticus";
 const description =
-  "White papers by Lawrence Fine on leadership and change in regulated and service businesses. Free to download as PDF, no sign-up.";
+  "White papers by Lawrence Fine on leadership, change and taking research to market in regulated and service businesses. Free to download as PDF, no sign-up.";
 
 export const metadata: Metadata = {
   title: `${title} — Graticus`,
@@ -68,7 +68,7 @@ export default function Insights() {
             Notes from <em>the work</em>
           </h1>
           <p className="lede">
-            Longer pieces on leadership and change in regulated and service businesses. Each one is a
+            Longer pieces on leadership, change and taking research to market in regulated and service businesses. Each one is a
             PDF, free to download. There is nothing to sign up for.
           </p>
 
