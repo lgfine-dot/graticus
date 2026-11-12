@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Graticule from "@/components/Graticule";
-import results from "../../../../public/answer-check/round-1/results.json";
-import corpus from "../../../../public/answer-check/round-1/corpus.canonical.json";
-import draw from "../../../../public/answer-check/round-1/draw.json";
+import results from "../../../../../public/answer-check/round-1/results.json";
+import corpus from "../../../../../public/answer-check/round-1/corpus.canonical.json";
+import draw from "../../../../../public/answer-check/round-1/draw.json";
 
 /*
  * Answer Check evaluation, round 1. The figures come from the sealed results file

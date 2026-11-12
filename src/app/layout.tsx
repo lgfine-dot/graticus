@@ -44,14 +44,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=JetBrains+Mono:wght@300;400;500&display=swap"
           rel="stylesheet"
         />
-        {/* Privacy-friendly analytics by Plausible */}
-        <script async src="https://plausible.io/js/pa-_V8q4kPzKd52Ou1z0gMH1.js" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()",
-          }}
-        />
+        {/* Plausible analytics is NOT here. It lives in src/app/(site)/layout.tsx so that only
+            real pages load it. The "page not found" page uses this root layout alone, so bots
+            probing old URLs from the domain's previous owner are not counted as pageviews. */}
       </head>
       <body>
         <GraticuleSymbol />
