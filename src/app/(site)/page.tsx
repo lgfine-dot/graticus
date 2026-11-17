@@ -448,7 +448,7 @@ export default function Home() {
               </p>
               <span className="go">check.graticus.com &rarr;</span>
             </a>
-            <a className="tool" href="https://verify.graticus.com/verify.html">
+            <a className="tool" href="https://verify.graticus.com">
               <div className="name">Certificate Check</div>
               <p>
                 Confirm a document has not changed since it was sealed: trial protocols, analysis
@@ -471,6 +471,11 @@ export default function Home() {
             How accurate is Answer Check? We tested it against people&rsquo;s judgment and published the
             results, including the measure it failed.{" "}
             <a href="/answer-check/results">Read the results &rarr;</a>
+          </p>
+          <p className="tools-note">
+            New to these tools? <a href="/guide">Read the step-by-step guide &rarr;</a> Issuing certificates
+            yourself? See the <a href="/certificate">Pre-Specification Certificate</a> for clinical trials and
+            the <a href="/certificate/documents">Document Certificate</a> for everything else.
           </p>
         </div>
       </section>
@@ -545,8 +550,10 @@ export default function Home() {
               <h5>Free tools</h5>
               <a href="https://check.graticus.com">Answer Check</a>
               <a href="/answer-check/results">Answer Check results</a>
-              <a href="https://verify.graticus.com/verify.html">Certificate Check</a>
+              <a href="https://verify.graticus.com">Certificate Check</a>
               <a href="https://compare.graticus.com">Document Compare</a>
+              <a href="/guide">How to use the tools</a>
+              <a href="/certificate">About certificates</a>
             </div>
             <div className="col">
               <h5>Connect</h5>
