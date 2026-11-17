@@ -235,18 +235,20 @@ export default function GuidePage() {
             <span className="chip ok">✓ In its source</span>
           </dt>
           <dd>
-            The number or quoted words appear in the source the answer cites. In a sealed test of 120 answers from
-            Claude, ChatGPT and Perplexity, people checked each result without seeing the tool&rsquo;s verdict. Of
-            119 figures marked ✓, 115 (97%) really were in the source.
+            The number or quoted words appear in the source the answer cites. In an October 2026 test, planned and
+            sealed in advance so it couldn&rsquo;t be adjusted afterward, people checked results from 120 answers by
+            Claude, ChatGPT and Perplexity without seeing the tool&rsquo;s verdict. Of 119 figures marked ✓, 115 (97%)
+            really were in the source.
           </dd>
           <dt>
             <span className="chip bad">✕ Not found as written</span>
           </dt>
           <dd>
             The figure isn&rsquo;t in the source written that way. It may still be there in other words, in a
-            table, or rounded. In the same test, 74 of 89 figures marked ✕ were in fact in the source, written
-            differently. The tool has been improved since then, but it hasn&rsquo;t been re-tested yet. Read the
-            passage shown before you conclude anything. <a href="/answer-check/results">See the test results</a>.
+            table, or rounded. In the same October 2026 test, 74 of 89 figures marked ✕ were in fact in the source,
+            written differently. <strong>In practice, ✕ usually means the figure is there in a different form, so it
+            marks where to look rather than an error.</strong> The tool has been improved since that test, but it
+            hasn&rsquo;t been re-tested yet. <a href="/answer-check/results">See the test results</a>.
           </dd>
           <dt>
             <span className="chip none">? Couldn&rsquo;t check</span>
@@ -272,7 +274,12 @@ export default function GuidePage() {
               "Where your text goes",
               [
                 "Unlike the other two tools, Answer Check runs on Graticus's server, because it has to open the sources.",
-                "Your question in Part 1 is sent to Graticus and, for the fairer rewording, to Anthropic's AI, Claude. Graticus doesn't store it.",
+                <>
+                  Your question in Part 1 is sent to Graticus and, for the fairer rewording, to Anthropic&rsquo;s AI,
+                  Claude. Graticus doesn&rsquo;t store it. How Anthropic handles it is set out in Anthropic&rsquo;s{" "}
+                  <a href="https://www.anthropic.com/legal/commercial-terms">commercial terms</a> and{" "}
+                  <a href="https://www.anthropic.com/legal/privacy">privacy policy</a>.
+                </>,
                 "The answer you paste in Part 2 is sent to Graticus, which opens each cited link. No AI reads it. The result is held in memory for up to two hours so you can seal it, then discarded.",
                 "The page counts visits with Plausible, which uses no cookies.",
                 "Don't paste anything you wouldn't send to a website, such as personal health details.",
