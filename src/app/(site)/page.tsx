@@ -449,7 +449,7 @@ export default function Home() {
               <span className="go">check.graticus.com &rarr;</span>
             </a>
             <a className="tool" href="https://verify.graticus.com/verify.html">
-              <div className="name">Certificate check</div>
+              <div className="name">Certificate Check</div>
               <p>
                 Confirm a document has not changed since it was sealed: trial protocols, analysis
                 plans, development briefs and Answer Check receipts. The check runs on your own
@@ -545,7 +545,7 @@ export default function Home() {
               <h5>Free tools</h5>
               <a href="https://check.graticus.com">Answer Check</a>
               <a href="/answer-check/results">Answer Check results</a>
-              <a href="https://verify.graticus.com/verify.html">Certificate check</a>
+              <a href="https://verify.graticus.com/verify.html">Certificate Check</a>
               <a href="https://compare.graticus.com">Document Compare</a>
             </div>
             <div className="col">
