@@ -457,6 +457,15 @@ export default function Home() {
               </p>
               <span className="go">verify.graticus.com &rarr;</span>
             </a>
+            <a className="tool" href="https://compare.graticus.com">
+              <div className="name">Document Compare</div>
+              <p>
+                Compare two versions of a Word or PDF document and see every change: words,
+                paragraphs and table cells, including rows and columns added or deleted. Nothing is
+                uploaded; the comparison runs on your own computer.
+              </p>
+              <span className="go">compare.graticus.com &rarr;</span>
+            </a>
           </div>
           <p className="tools-note">
             How accurate is Answer Check? We tested it against people&rsquo;s judgment and published the
@@ -537,6 +546,7 @@ export default function Home() {
               <a href="https://check.graticus.com">Answer Check</a>
               <a href="/answer-check/results">Answer Check results</a>
               <a href="https://verify.graticus.com/verify.html">Certificate check</a>
+              <a href="https://compare.graticus.com">Document Compare</a>
             </div>
             <div className="col">
               <h5>Connect</h5>

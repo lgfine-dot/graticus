@@ -401,7 +401,7 @@ section { padding: 100px 0; border-bottom: 1px solid var(--line); }
 }
 
 /* ---------- Free tools ---------- */
-.free-tools .tools { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 92ch; }
+.free-tools .tools { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 132ch; }
 .free-tools .tool {
   display: flex; flex-direction: column; gap: 10px; padding: 28px;
   border: 1px solid var(--line); text-decoration: none; color: inherit;
@@ -410,6 +410,10 @@ section { padding: 100px 0; border-bottom: 1px solid var(--line); }
 .free-tools .tool .name { font-family: 'Fraunces', serif; font-size: 24px; color: var(--ink); }
 .free-tools .tool p { margin: 0; font-size: 15px; color: var(--ink-soft); line-height: 1.6; }
 .free-tools .tool .go { margin-top: auto; font-size: 14px; color: var(--blue-700); }
+@media (max-width: 1100px) {
+  .free-tools .tools { grid-template-columns: 1fr 1fr; }
+  .free-tools .tool:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
 @media (max-width: 820px) {
   .free-tools .tools { grid-template-columns: 1fr; }
 }
